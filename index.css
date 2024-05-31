@@ -1,0 +1,10 @@
+:root{
+    /* color */
+    --primary-color : #FF682D;
+    /* font */
+}
+
+.container{
+    width:80%;
+    margin:auto;
+}
