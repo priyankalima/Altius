@@ -46,7 +46,6 @@ const header = (props) => {
     toggleBtn.style.display = "none"
   }
 
-
   // menu elements
   const list = props[1].menu;
   list.forEach((list) => {
@@ -59,11 +58,17 @@ const header = (props) => {
       )
     )
   })
-
-
-
+  // create button element
+  menu.appendChild(
+    Object.assign(
+      document.createElement('button'),
+      {
+        innerHTML: "Get A Quotes"
+      }
+    )
+  )
 }
-// header();
+
 
 console.log(navbar)
 fetch('./content.json')
