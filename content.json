@@ -12,7 +12,17 @@
         {
             "class": "lastchild",
             "id": "menu",
-            "menu" : ["Capability","Our Service","About Us","Cotact Us"]
+            "menu": [
+                "Capability",
+                "Our Service",
+                "About Us",
+                "Cotact Us"
+            ]
         }
-    ]
+    ],
+    "banner": {
+        "heading": "Signs of Good Times",
+        "para": "Houston’s One-Stop Shop for Visual Communications",
+        "src": "./assets/banner.svg"
+    }
 }

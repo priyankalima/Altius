@@ -2,7 +2,7 @@ const header = (props) => {
 
   // append inside navbar
   props.forEach((element) => {
-    navbar.appendChild(
+    nav.appendChild(
       Object.assign(
         document.createElement('div'),
         {
@@ -38,13 +38,26 @@ const header = (props) => {
   )
 
   // Create a MediaQueryList object
-  var media = window.matchMedia("(max-width: 600px)");
-  if (media.matches) {
-    toggleBtn.style.display = "block";
+  // var media = window.matchMedia("(max-width: 600px)");
+  
+
+  // Create a MediaQueryList object
+  var media = window.matchMedia("(max-width: 600px)")
+  // state change condition
+  function mediaQuery(media) {
+    if (media.matches) {
+      toggleBtn.style.display = "block";
+    }
+    else {
+      toggleBtn.style.display = "none"
+    }
   }
-  else {
-    toggleBtn.style.display = "none"
-  }
+  // Attach listener function on state changes
+  media.addEventListener("change", function() {
+    mediaQuery(media);
+  });
+   // Call listener function at run time
+   mediaQuery(media);
 
   // menu elements
   const list = props[1].menu;
@@ -52,12 +65,18 @@ const header = (props) => {
     menu.appendChild(
       Object.assign(
         document.createElement('li'),
+      )
+    ).appendChild(
+      Object.assign(
+        document.createElement('a'),
         {
-          innerHTML: list
+          href : "demo.com",
+          innerHTML : list
         }
       )
     )
   })
+
   // create button element
   menu.appendChild(
     Object.assign(
@@ -70,7 +89,7 @@ const header = (props) => {
 }
 
 
-console.log(navbar)
+console.log(nav)
 fetch('./content.json')
   .then(data => data.json())
   .then(res => header(res.navbar))
