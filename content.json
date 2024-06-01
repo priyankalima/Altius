@@ -1,0 +1,18 @@
+{
+    "navbar": [
+        {
+            "class": "firstChild",
+            "id": "logo",
+            "logo": {
+                "class": "img",
+                "src": "./assets/logo.svg",
+                "id": "toggleBtn"
+            }
+        },
+        {
+            "class": "lastchild",
+            "id": "menu",
+            "menu" : ["Capability","Our Service","About Us","Cotact Us"]
+        }
+    ]
+}

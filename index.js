@@ -1,54 +1,72 @@
-const header = () => {
+const header = (props) => {
 
-  // navbar elements
-  navbar
-    .appendChild(
+  // append inside navbar
+  props.forEach((element) => {
+    navbar.appendChild(
       Object.assign(
         document.createElement('div'),
         {
-          className: 'container',
-          id: "box"
-        }
-      )
-    ).append(
-      Object.assign(
-        document.createElement('div'),
-        {
-          innerHTML: `<h1>hello world</h1>`,
-          id: 'logo'
-        }
-      ),
-      Object.assign(
-        document.createElement('div'),
-        {
-          // innerHTML: 'button',
-          id: 'menu'
+          className: element.class,
+          id: element.id
         }
       )
     )
+  });
+
   // logo elements
   logo.append(
     Object.assign(
       document.createElement('img'),
       {
-        className: 'img',
-        src: "./assets/logo.svg"
-        // id: "box"
+        className: props[0].logo.class,
+        src: props[0].logo.src
+        // id: element.id
       }
     ),
     Object.assign(
       document.createElement('div'),
       {
-        className: 'img',
-        // src :"demo.jpg"
-        id: "toggleMenu"
+        id: props[0].logo.id,
+        innerHTML: 
+        `
+        <input type="checkbox" id="toggle"/>
+        <label class="open" for="toggle"></label>
+        <label class="close" for="toggle"></label>
+        `
       }
     )
   )
 
-  const id = document.getElementById('box');
-  console.log(id)
-  console.log(navbar)
+  // Create a MediaQueryList object
+  var media = window.matchMedia("(max-width: 600px)");
+  if (media.matches) {
+    toggleBtn.style.display = "block";
+  }
+  else {
+    toggleBtn.style.display = "none"
+  }
+
+
+  // menu elements
+  const list = props[1].menu;
+  list.forEach((list) => {
+    menu.appendChild(
+      Object.assign(
+        document.createElement('li'),
+        {
+          innerHTML: list
+        }
+      )
+    )
+  })
+
+
 
 }
-header();
+// header();
+
+console.log(navbar)
+fetch('./content.json')
+  .then(data => data.json())
+  .then(res => header(res.navbar))
+  .catch(err => console.log(err))
