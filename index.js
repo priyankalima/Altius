@@ -27,8 +27,8 @@ const header = (props) => {
       document.createElement('div'),
       {
         id: props[0].logo.id,
-        innerHTML: 
-        `
+        innerHTML:
+          `
         <input type="checkbox" id="toggle"/>
         <label class="open" for="toggle"></label>
         <label class="close" for="toggle"></label>
@@ -39,7 +39,7 @@ const header = (props) => {
 
   // Create a MediaQueryList object
   // var media = window.matchMedia("(max-width: 600px)");
-  
+
 
   // Create a MediaQueryList object
   var media = window.matchMedia("(max-width: 600px)")
@@ -53,11 +53,11 @@ const header = (props) => {
     }
   }
   // Attach listener function on state changes
-  media.addEventListener("change", function() {
+  media.addEventListener("change", function () {
     mediaQuery(media);
   });
-   // Call listener function at run time
-   mediaQuery(media);
+  // Call listener function at run time
+  mediaQuery(media);
 
   // menu elements
   const list = props[1].menu;
@@ -70,12 +70,34 @@ const header = (props) => {
       Object.assign(
         document.createElement('a'),
         {
-          href : "demo.com",
-          innerHTML : list
+          href: "demo.com",
+          innerHTML: list
         }
       )
     )
   })
+  // firsl list element
+  const firstList = document.getElementsByTagName('li')[0];
+  // frist link element
+  const firstLink = document.getElementsByTagName('a')[0];
+  // added class to both
+  firstList.className = "dropdown";
+  firstLink.className = "dropbtn";
+  // create dropdownl list
+  const droplist = document.createElement('div');
+  droplist.className = "dropList"
+  // add innerHTML to droplist
+  droplist.innerHTML = `
+      <li><a href="">Architectural Graphics</a></li>
+      <li><a href="">Construction Graphics</a></li>
+      <li><a href="">Exhibit & Trade Show Signal</a></li>
+      <li><a href="">Corporate Branding & Business Graphics</a></li>
+  `
+  // add to first loist lement
+  firstList.appendChild(droplist);
+
+  console.log(firstList)
+
 
   // create button element
   menu.appendChild(
