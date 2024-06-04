@@ -261,16 +261,16 @@ fetch('./content.json')
   .then(data => data.json())
   .then((res) => {
     navbar(res.navbar),
-      heroSection(),
-      serviceSection(),
-      aboutSection(),
-      workSection(),
-      processSection(),
-      testiSection(),
-      contactSection(),
-      blogSection(),
-      faqSection(),
-      detailSection(),
-      baseSection()
+    heroSection(),
+    serviceSection(),
+    aboutSection(),
+    workSection(),
+    processSection(),
+    testiSection(),
+    contactSection(),
+    blogSection(),
+    faqSection(),
+    detailSection(),
+    baseSection()
   })
   .catch(err => console.log(err))
