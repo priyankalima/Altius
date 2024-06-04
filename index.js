@@ -1,4 +1,4 @@
-const header = (props) => {
+const navbar = (props) => {
 
   // append inside navbar
   props.forEach((element) => {
@@ -38,10 +38,6 @@ const header = (props) => {
   )
 
   // Create a MediaQueryList object
-  // var media = window.matchMedia("(max-width: 600px)");
-
-
-  // Create a MediaQueryList object
   var media = window.matchMedia("(max-width: 600px)")
   // state change condition
   function mediaQuery(media) {
@@ -76,28 +72,47 @@ const header = (props) => {
       )
     )
   })
-  // firsl list element
+  // first list element
   const firstList = document.getElementsByTagName('li')[0];
+  firstList.className = "dropdown";
   // frist link element
   const firstLink = document.getElementsByTagName('a')[0];
-  // added class to both
-  firstList.className = "dropdown";
   firstLink.className = "dropbtn";
-  // create dropdownl list
-  const droplist = document.createElement('div');
-  droplist.className = "dropList"
-  // add innerHTML to droplist
-  droplist.innerHTML = `
-      <li><a href="">Architectural Graphics</a></li>
-      <li><a href="">Construction Graphics</a></li>
-      <li><a href="">Exhibit & Trade Show Signal</a></li>
-      <li><a href="">Corporate Branding & Business Graphics</a></li>
-  `
-  // add to first loist lement
-  firstList.appendChild(droplist);
+  // second list element
+  const secondList = document.getElementsByTagName('li')[1];
+  secondList.className = "dropdown";
+  // second link element
+  const secondLink = document.getElementsByTagName('a')[1];
+  secondLink.className = "dropbtn"
 
-  console.log(firstList)
-
+  for (let i = 0; i < 2; i++) {
+    // create dropdownl list
+    const droplist = document.createElement('div');
+    droplist.className = "dropList"
+    // count droplists
+    const droplists = document.getElementsByClassName('dropList').length;
+    // if droplist is 0 show append the list into firstList else secondList
+    if (droplists == 0) {
+      firstList.appendChild(droplist);
+      // add innerHTML to droplist
+      droplist.innerHTML = `
+          <li><a href="">Architectural Graphics</a></li>
+          <li><a href="">Construction Graphics</a></li>
+          <li><a href="">Exhibit & Trade Show Signal</a></li>
+          <li><a href="">Corporate Branding & Business Graphics</a></li>
+      `
+    }
+    else {
+      secondList.appendChild(droplist);
+      // add innerHTML to droplist
+      droplist.innerHTML = `
+          <li><a href="">Architectural Graphicsssss</a></li>
+          <li><a href="">Construction Graphicssss</a></li>
+          <li><a href="">Exhibit & Trade Show Signalll</a></li>
+          <li><a href="">Corporate Branding & Business Graphics</a></li>
+      `
+    }
+  }
 
   // create button element
   menu.appendChild(
@@ -111,8 +126,9 @@ const header = (props) => {
 }
 
 
+
 console.log(nav)
 fetch('./content.json')
   .then(data => data.json())
-  .then(res => header(res.navbar))
+  .then(res => navbar(res.navbar))
   .catch(err => console.log(err))
