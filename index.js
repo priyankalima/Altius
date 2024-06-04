@@ -217,15 +217,60 @@ const serviceSection = () => {
     )
   )
 }
+// creating about us elements
+const aboutSection = () =>{
 
+}
+// creating work service elments
+const workSection = () =>{
+
+}
+// creating process section elemnts
+const processSection = () =>{
+
+}
+// creating testimonila elements
+const testiSection = () =>{
+
+}
+// creating contact elemnts
+const contactSection = () =>{
+
+}
+// creating blog elements
+const blogSection = ()=>{
+
+}
+// creating faq elements
+const faqSection = ()=>{
+
+}
+// creating details elements
+const detailSection = ()=>{
+
+}
+// creating base elements
+const baseSection = ()=>{
+
+}
 
 
 console.log(banner)
+// render all html elemnts with fetch data
 fetch('./content.json')
   .then(data => data.json())
   .then((res) => {
     navbar(res.navbar),
       heroSection(),
-      serviceSection()
+      serviceSection(),
+      aboutSection(),
+      workSection(),
+      processSection(),
+      testiSection(),
+      contactSection(),
+      blogSection(),
+      faqSection(),
+      detailSection(),
+      baseSection()
   })
   .catch(err => console.log(err))
