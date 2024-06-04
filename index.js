@@ -1,3 +1,4 @@
+// ceating navbar elements
 const navbar = (props) => {
 
   // append inside navbar
@@ -106,10 +107,13 @@ const navbar = (props) => {
       secondList.appendChild(droplist);
       // add innerHTML to droplist
       droplist.innerHTML = `
-          <li><a href="">Architectural Graphicsssss</a></li>
-          <li><a href="">Construction Graphicssss</a></li>
-          <li><a href="">Exhibit & Trade Show Signalll</a></li>
-          <li><a href="">Corporate Branding & Business Graphics</a></li>
+          <li><a href="">Airport & City Transport</a></li>
+          <li><a href="">Healthcare & Hospital</a></li>
+          <li><a href="">Logistics & Distribution</a></li>
+          <li><a href="">Utility & Services</a></li>
+          <li><a href="">Oil & Gas</a></li>
+          <li><a href="">Government & Educational Institute</a></li>
+          <li><a href="">Food & Beverage Distribution</a></li>
       `
     }
   }
@@ -124,11 +128,104 @@ const navbar = (props) => {
     )
   )
 }
+// creating banner elements
+const heroSection = () => {
+  banner.append(
+    // div one
+    Object.assign(
+      document.createElement('div'),
+      {
+        className: "col-lft",
+        id: "bannerContent",
+      }
+    ),
+    // div two
+    Object.assign(
+      document.createElement('div'),
+      {
+        className: "col-rgt",
+        id: "bannerImage",
+      }
+    )
+  )
+  // inside bannerContent elements
+  bannerContent.append(
+    Object.assign(
+      document.createElement('span'),
+      {
+        className: "heading",
+        innerHTML: "Signs of Good Times"
+      }
+    ),
+    Object.assign(
+      document.createElement('span'),
+      {
+        className: "para",
+        innerHTML: "Houston’s One-Stop Shop for Visual Communications"
+      }
+    ),
+    Object.assign(
+      document.createElement('button'),
+      {
+        className: "banner-btn",
+        innerHTML: "Get Started"
+      }
+    )
+  )
+  // inside bannerImage elements
+  bannerImage.appendChild(
+    Object.assign(
+      document.createElement('img'),
+      {
+        src: "./assets/banner.svg"
+      }
+    )
+  )
+}
+// creating service elements
+const serviceSection = () => {
+  // render service elements
+  service.append(
+    Object.assign(
+      document.createElement('div'),
+      {
+        id: "serviceTitle",
+        className: "service-title"
+      }
+    ),
+    Object.assign(
+      document.createElement('div'),
+      {
+        id: "serviceContents",
+        className: "service-Contents"
+      }
+    )
+  )
+  // inside of service title create two texts
+  serviceTitle.append(
+    Object.assign(
+      document.createElement('span'),
+      {
+        innerHTML : "Our Capability"
+      }
+    ),
+    Object.assign(
+      document.createElement('span'),
+      {
+        innerHTML : "Find Out Our Services"
+      }
+    )
+  )
+}
 
 
 
-console.log(nav)
+console.log(banner)
 fetch('./content.json')
   .then(data => data.json())
-  .then(res => navbar(res.navbar))
+  .then((res) => {
+    navbar(res.navbar),
+      heroSection(),
+      serviceSection()
+  })
   .catch(err => console.log(err))
