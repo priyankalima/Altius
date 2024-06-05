@@ -175,34 +175,34 @@
             "testi": [
                 {
                     "img": "",
-                    "name": "",
-                    "location": "",
-                    "msg": ""
+                    "name": "Bobi",
+                    "location": "Hostone,texas",
+                    "msg": "ALTIUS wrapped our ALTIUS wrapped our high school band trailer. They came up with a dynamic design. It went from plain white to stunning!"
                 },
                 {
                     "img": "",
-                    "name": "",
-                    "location": "",
-                    "msg": ""
+                    "name": "Todd Dyson",
+                    "location": "Hostone,texas",
+                    "msg": "Altius Graphics installed the SIDD and the guys did a great job. There was a sizing issue that he made me aware of and updated before he applied even though it set him back a day. They care about their clients and are transparent from day 1 when they bid the job. He had the materials and guarantee on his work and the product on the bid. No one else did THANKS SIDD"
                 },
                 {
                     "img": "",
-                    "name": "",
-                    "location": "",
-                    "msg": ""
+                    "name": "Houston S",
+                    "location": "Hostone,texas",
+                    "msg": "Altius Graphics installed the promotional graphics on my business' temporary wall in front of our indoor construction space. They did a great job with the printing and provided great value. The company's owner was very communicative and responsive during the entire process."
                 }
             ]
         },
         {
             "class": "",
             "id": "",
-            "img": ""
+            "img": "./assets/testimonial.svg"
         }
     ],
     "contact": {
-        "img": "",
-        "content": "",
-        "backimg": ""
+        "img": "./assets/contactImg.svg",
+        "content": "Contact Us Today To Start Your Next Project",
+        "backimg": "./assets/contactBg.svg"
     },
     "blog": [
         {
@@ -214,21 +214,21 @@
             "id": "",
             "content": [
                 {
-                    "img": "",
-                    "title": "",
-                    "para": "",
+                    "img": "./assets/blogImg/img-1.svg",
+                    "title": "Vinyl Graphics for Every Business Need",
+                    "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     "link": ""
                 },
                 {
-                    "img": "",
-                    "title": "",
-                    "para": "",
+                    "img": "./assets/blogImg/img-2.svg",
+                    "title": "A Sustainable Way to Boost Business",
+                    "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     "link": ""
                 },
                 {
-                    "img": "",
-                    "title": "",
-                    "para": "",
+                    "img": "./assets/blogImg/img-3.svg",
+                    "title": "Elevate Your Office With Design",
+                    "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     "link": ""
                 }
             ]
@@ -250,11 +250,11 @@
         }
     ],
     "details": {
-        "logo": "",
+        "logo": "./assets/logo.svg",
         "about": "",
-        "contact": [
-            "80 Broklyn Road Street New York. USA",
-            "+(528) 456-7592",
+        "address": [
+            "80 Broklyn Road Street New York. USA" ,
+            "+(528) 456-7592" ,
             "info@example.com"
         ],
         "quicklink": [
