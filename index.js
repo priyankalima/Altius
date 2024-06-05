@@ -438,13 +438,13 @@ const contactSection = (props) => {
 }
 // creating blog elements
 const blogSection = (props) => {
-   console.log(props)
-   blog.append(
+  console.log(props)
+  blog.append(
     Object.assign(
       document.createElement('div'),
       {
-        className : 'blog-title',
-        innerHTML : `
+        className: 'blog-title',
+        innerHTML: `
         <span>Blog</span>
         <p>Find Out What’s New</p>
         `
@@ -453,19 +453,19 @@ const blogSection = (props) => {
     Object.assign(
       document.createElement('div'),
       {
-        className : 'blog-content',
+        className: 'blog-content',
         id: 'blogContent',
       }
     )
-   )
+  )
   //  inside blog content
-  props[1].content.forEach((item)=>{
+  props[1].content.forEach((item) => {
     blogContent.append(
       Object.assign(
         document.createElement('div'),
         {
-          className : "blog-content-list",
-          innerHTML : `
+          className: "blog-content-list",
+          innerHTML: `
           <img src=${item.img} >
           <div>
             <h4>${item.title}</h4>
@@ -480,13 +480,13 @@ const blogSection = (props) => {
 }
 // creating faq elements
 const faqSection = (props) => {
-   console.log(props)
-   faq.append(
+  console.log(props)
+  faq.append(
     Object.assign(
       document.createElement('div'),
       {
-        className : "faq-title",
-        innerHTML : `
+        className: "faq-title",
+        innerHTML: `
         <span>Faq</span>
         <h1>Frequently Asked Questions</h1>
         `
@@ -495,24 +495,24 @@ const faqSection = (props) => {
     Object.assign(
       document.createElement('div'),
       {
-        className : "faq-content",
+        className: "faq-content",
         id: "faqContent"
       }
     )
-   )
+  )
   //  render all the faq contents
-  props[1].content.forEach((item)=>{
+  props[1].content.forEach((item) => {
     faqContent.appendChild(
       Object.assign(
         document.createElement('div'),
         {
-          className : 'faq-content-list',
-          innerHTML : `
+          className: 'faq-content-list',
+          innerHTML: `
           <p>${item}</p>
           `
         }
       )
-      )
+    )
   })
 }
 // creating details elements
@@ -521,16 +521,15 @@ const detailSection = (props) => {
     Object.assign(
       document.createElement('div'),
       {
-        className : 'detail-lf-content',
-        id : "detailLfContent",
-        innerHTML : `
+        className: 'detail-lf-content',
+        id: "detailLfContent",
+        innerHTML: `
         <img src=${props.logo}>
         <span>${props.about}</span>
-        <p>${
-          props.address.map((item)=>{
-            return item
-          })
-        }
+        <p>${props.address.map((item) => {
+          return item
+        })
+          }
         </p>
         `
       }
@@ -538,14 +537,13 @@ const detailSection = (props) => {
     Object.assign(
       document.createElement('div'),
       {
-        className : 'detail-md-content',
-        id : "detailMdContent",
-        innerHTML : `
-        <p>${
-          props.quicklink.map((item)=>{
-            return item
-          })
-        }
+        className: 'detail-md-content',
+        id: "detailMdContent",
+        innerHTML: `
+        <p>${props.quicklink.map((item) => {
+          return item
+        })
+          }
         </p>
         `
       }
@@ -553,14 +551,13 @@ const detailSection = (props) => {
     Object.assign(
       document.createElement('div'),
       {
-        className : 'detail-rt-content',
-        id : "detailLeRtContent",
-        innerHTML : `
-        <p>${
-          props.links.map((item)=>{
-            return item
-          })
-        }
+        className: 'detail-rt-content',
+        id: "detailLeRtContent",
+        innerHTML: `
+        <p>${props.links.map((item) => {
+          return item
+        })
+          }
         </p>
         `
       }
@@ -568,12 +565,30 @@ const detailSection = (props) => {
   )
 }
 // creating base elements
-const baseSection = () => {
-
+const baseSection = (props) => {
+  base.append(
+    Object.assign(
+      document.createElement('div'),
+      {
+        className: 'base-lf-content',
+        innerHTML: "Copyright 2020 ALTIUS Graphics"
+      }
+    ),
+    Object.assign(
+      document.createElement('div'),
+      {
+        className: 'base-rt-content',
+        innerHTML: `
+        ${props.icon.map((item) => {
+          return `<span>${item}</span>`
+        })
+          }
+        `
+      }
+    )
+  )
 }
 
-
-console.log(banner)
 // render all html elemnts with fetch data
 fetch('./content.json')
   .then(data => data.json())
