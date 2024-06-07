@@ -1,6 +1,5 @@
 const Main = (props) => {
-    mainpage.innerHTML =
-        `
+    mainpage.innerHTML = `
    <section>
       <div class="d-flex">
           <div class="hero-lt-content">
@@ -50,29 +49,57 @@ const Main = (props) => {
             </div>
         </div>
    </section>
+   <section>
+        <div class="container d-col">
+            <div>
+                <p>our process</p>
+                <h3>What We Do</h3>
+            </div>
+            <div id="work-rt-content">
+                <img src=${props.process.src}>
+            </div>
+        </div>
+   </section>
+   <section>
+        <div class="container d-flex">
+            <div class="testi-lt-content">
+                <p>testimonial</p>
+                <h3>What Our Happy Client Say</h3>
+                <div class="testi-slider">
+                     <div id="testi-content" class="d-row"></div>
+                     <button>prev</button>
+                     <button>next</button>
+                </div>
+            </div>
+            <div id="testi-rt-image" class="testi-rt-image">
+                <img src=${props.testimonial[1].img}>
+            </div>
+        </div>
+   </section>
+   
    `
 
     // create a service content list
     const serviceContent = document.getElementById('service-content');
     props.service[1].content.forEach(item => {
-         serviceContent.appendChild(
+        serviceContent.appendChild(
             Object.assign(
                 document.createElement('img'),
                 {
-                    src : item.img
+                    src: item.img
                 }
             )
-         )
+        )
     });
     // create work right content and render here
     const workContent = document.getElementById('work-rt-content');
-    props.work[1].content.forEach((item)=>{
+    props.work[1].content.forEach((item) => {
         workContent.appendChild(
             Object.assign(
                 document.createElement('div'),
                 {
-                    className : "work-card",
-                    innerHTML : `
+                    className: "work-card",
+                    innerHTML: `
                     <img src=${item.icon}>
                     <h4>${item.title}</h4>
                     <span>${item.para}</span>
@@ -81,6 +108,34 @@ const Main = (props) => {
             )
         )
     })
+    // create a testimonial content and render
+    const testiMonial = document.getElementById('testi-content');
+    props.testimonial[0].testi.forEach(item => {
+        const testItem = document.createElement('div');
+        testItem.className = "testi-item"
+        testiMonial.appendChild(testItem)
+        testItem.append(
+            Object.assign(
+                document.createElement('h4'),
+                {
+                    innerHTML: item.name
+                }
+            ),
+            Object.assign(
+                document.createElement('p'),
+                {
+                    innerHTML: item.location
+                }
+            ),
+            Object.assign(
+                document.createElement('span'),
+                {
+                    innerHTML: item.msg
+                }
+            )
+        )
+    })
+
 }
 
 // call function with content
