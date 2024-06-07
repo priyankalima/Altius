@@ -39,6 +39,17 @@ const Main = (props) => {
             </div>
         </div>
    </section>
+   <section>
+        <div class="container">
+            <div>
+                <p>our Work</p>
+                <h3>Where We Do</h3>
+            </div>
+            <div 
+               id="work-rt-content">
+            </div>
+        </div>
+   </section>
    `
 
     // create a service content list
@@ -53,6 +64,23 @@ const Main = (props) => {
             )
          )
     });
+    // create work right content and render here
+    const workContent = document.getElementById('work-rt-content');
+    props.work[1].content.forEach((item)=>{
+        workContent.appendChild(
+            Object.assign(
+                document.createElement('div'),
+                {
+                    className : "work-card",
+                    innerHTML : `
+                    <img src=${item.icon}>
+                    <h4>${item.title}</h4>
+                    <span>${item.para}</span>
+                    `
+                }
+            )
+        )
+    })
 }
 
 // call function with content
