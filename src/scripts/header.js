@@ -3,7 +3,7 @@ const Header = (props) => {
     // console.log(props[0].logo.src)
     // add inside of navbar
     navbar.innerHTML = `
-      <div class="container">
+      <div class="container d-flex">
            <div class="logo">
               <img src=${props[0].logo.src}>
               <div id="toggle-btn">
@@ -15,7 +15,7 @@ const Header = (props) => {
               </div>
            </div>
            <div class="menu">
-              <div id="menu-list"></div>
+              <div id="menu-list" class="d-flex"></div>
               <button>Get a Quote</button>
            </div>
       </div>
@@ -68,37 +68,37 @@ const Header = (props) => {
     const secondLink = document.getElementsByTagName('a')[1];
     secondLink.className = "dropbtn"
 
-    for (let i = 0; i < 2; i++) {
-        // create dropdownl list
-        const droplist = document.createElement('div');
-        droplist.className = "dropList"
-        // count droplists
-        const droplists = document.getElementsByClassName('dropList').length;
-        // if droplist is 0 show append the list into firstList else secondList
-        if (droplists == 0) {
-            firstList.appendChild(droplist);
-            // add innerHTML to droplist
-            droplist.innerHTML = `
-                <li><a href="">Architectural Graphics</a></li>
-                <li><a href="">Construction Graphics</a></li>
-                <li><a href="">Exhibit & Trade Show Signal</a></li>
-                <li><a href="">Corporate Branding & Business Graphics</a></li>
-            `
-        }
-        else {
-            secondList.appendChild(droplist);
-            // add innerHTML to droplist
-            droplist.innerHTML = `
-                <li><a href="">Airport & City Transport</a></li>
-                <li><a href="">Healthcare & Hospital</a></li>
-                <li><a href="">Logistics & Distribution</a></li>
-                <li><a href="">Utility & Services</a></li>
-                <li><a href="">Oil & Gas</a></li>
-                <li><a href="">Government & Educational Institute</a></li>
-                <li><a href="">Food & Beverage Distribution</a></li>
-            `
-        }
-    }
+    // for (let i = 0; i < 2; i++) {
+    //     // create dropdownl list
+    //     const droplist = document.createElement('div');
+    //     droplist.className = "dropList"
+    //     // count droplists
+    //     const droplists = document.getElementsByClassName('dropList').length;
+    //     // if droplist is 0 show append the list into firstList else secondList
+    //     if (droplists == 0) {
+    //         firstList.appendChild(droplist);
+    //         // add innerHTML to droplist
+    //         droplist.innerHTML = `
+    //             <li><a href="">Architectural Graphics</a></li>
+    //             <li><a href="">Construction Graphics</a></li>
+    //             <li><a href="">Exhibit & Trade Show Signal</a></li>
+    //             <li><a href="">Corporate Branding & Business Graphics</a></li>
+    //         `
+    //     }
+    //     else {
+    //         secondList.appendChild(droplist);
+    //         // add innerHTML to droplist
+    //         droplist.innerHTML = `
+    //             <li><a href="">Airport & City Transport</a></li>
+    //             <li><a href="">Healthcare & Hospital</a></li>
+    //             <li><a href="">Logistics & Distribution</a></li>
+    //             <li><a href="">Utility & Services</a></li>
+    //             <li><a href="">Oil & Gas</a></li>
+    //             <li><a href="">Government & Educational Institute</a></li>
+    //             <li><a href="">Food & Beverage Distribution</a></li>
+    //         `
+    //     }
+    // }
 
 }
 // caling function with content

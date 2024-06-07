@@ -1,5 +1,39 @@
-#navbar{
-    width:100%;
-    background: green;
+#navbar {
+    width: 100%;
+    background: var(--background-color);
+
+    .logo {
+        @media only screen and (max-width: 600px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        width:70%;
+        gap:20px;
+        justify-content:space-between;
+        @media only screen and (max-width: 600px) {
+            /* display: flex; */
+            flex-direction: column;
+            width:100%;
+            /* justify-content: space-evenly; */
+        }
+        #menu-list{
+            gap:10px;
+
+            li{
+                list-style: none;
+            }
+        }
+        button{
+            padding:10px 25px;
+            background: var(--theme-color);
+            border:none;
+            border-radius: 5px;
+            color:var(--light-color);
+        }
+    }
 
 }
