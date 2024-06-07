@@ -1,7 +1,20 @@
-const Main =()=>{
+const Main =(props)=>{
    mainpage.innerHTML = 
    `
-   <h1>this is main page</h1>
+   <section>
+      <div class=" d-flex">
+          <div class="hero-lt-content">
+              this is content
+          </div>
+          <div class="hero-rt-image">
+              <img src=${props[1].src}>
+          </div>
+      </div>
+   </section>
    `
 }
-Main();
+
+// call function with content
+fetch('./content.json')
+.then((res)=> res.json())
+.then((data)=>Main(data.banner))

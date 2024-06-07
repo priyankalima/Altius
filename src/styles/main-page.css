@@ -4,4 +4,10 @@
     padding:30px 0;
     color:#222;
     background: #ffffff;
-}
+
+    .hero-rt-image{
+        img{
+            width:100%;
+        }
+    }
+} 
