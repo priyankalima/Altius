@@ -1,18 +1,40 @@
-#mainpage{
-    width:100%;
+#mainpage {
+    width: 100%;
     height: auto;
-    padding:60px 0;
-    color:#222;
-    background: var(--background-color);
+    /* padding:60px 0; */
+    color: #222;
 
-    .hero-rt-image{
-        position: relative;
-        overflow: hidden;
-        img{
-            width:100%;
-            @media only screen and (max-width: 600px) {
-                margin-left: 30px;
+    section:nth-child(1) {
+        background: var(--background-color);
+        padding: 60px 0;
+
+        .hero-rt-image {
+            position: relative;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+
+                @media only screen and (max-width: 600px) {
+                    margin-left: 30px;
+                }
             }
         }
     }
-} 
+
+    section:nth-child(2) {
+        background: #FBFBFB;
+        padding: 60px 0;
+
+        .service-rt-content {
+            background: #fafafa;
+            width: 100%;
+            overflow: scroll;
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}

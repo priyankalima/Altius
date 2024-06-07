@@ -41,5 +41,13 @@ body {
         gap:20px;
     }
 }
+.d-col{
+    display: flex;
+    flex-direction: column;
+}
+.d-row{
+    display: flex;
+    flex-direction: row;
+}
 
 /* create style layout */
