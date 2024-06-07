@@ -37,4 +37,27 @@
         }
 
     }
+
+    section:nth-child(3){
+        background: #ffffff;
+        padding: 60px 0;
+
+        .d-flex{
+            align-items: start;
+            @media only screen and (max-width: 600px) {
+                flex-direction: column-reverse;
+            }
+        }
+        .about-lt-content,.about-rt-image{
+            width:50%;
+            @media only screen and (max-width: 600px) {
+                width:100%;
+            }
+        }
+        .about-rt-image{
+            img{
+                width:100%;
+            }
+        }
+    }
 }

@@ -21,8 +21,23 @@ const Main = (props) => {
                <p>our service</p>
                <h3>What we do</h3>
            </div>
-           <div id="service-content" class="service-rt-content d-row"> </div>
+           <div 
+              id="service-content" 
+              class="service-rt-content d-row">
+           </div>
        </div>
+   </section>
+   <section>
+        <div class="container d-flex">
+            <div class="about-lt-content">
+                <p>why choose us</p>
+                <h3>${props.about[0].heading}</h3>
+                <span>${props.about[0].para}</span>
+            </div>
+            <div class="about-rt-image">
+                <img src=${props.about[1].src}>
+            </div>
+        </div>
    </section>
    `
 
