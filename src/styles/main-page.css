@@ -3,7 +3,7 @@
     height: auto;
     padding:60px 0;
     color:#222;
-    background: #ffffff;
+    background: var(--background-color);
 
     .hero-rt-image{
         position: relative;
