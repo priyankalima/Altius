@@ -4,7 +4,10 @@ const Main =(props)=>{
    <section>
       <div class=" d-flex">
           <div class="hero-lt-content">
-              this is content
+          <div class="container">
+          <h1>${props[0].heading}</h1>
+          <p>${props[0].para}</p>
+          </div>
           </div>
           <div class="hero-rt-image">
               <img src=${props[1].src}>
