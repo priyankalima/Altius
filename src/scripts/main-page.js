@@ -1,35 +1,58 @@
+// creating main function
 const Main = (props) => {
-    mainpage.innerHTML = `
-   <section>
-      <div class="d-flex">
-          <div class="hero-lt-content">
-            <div class="container">
-                <h1 
-                class="animate__animated animate__bounce">
-                ${props.banner[0].heading}
-                </h1>
-                <p>${props.banner[0].para}</p>
-                <button>Get Started</button>
+
+    // creating baner section
+    const baner = document.createElement('section');
+    baner.innerHTML = `
+            <div class="d-flex">
+                <div class="hero-lt-content">
+                <div class="container">
+                    <h1 
+                    class="animate__animated animate__bounce">
+                    ${props.banner[0].heading}
+                    </h1>
+                    <p>${props.banner[0].para}</p>
+                    <button>Get Started</button>
+                </div>
+                </div>
+                <div class="hero-rt-image">
+                    <img src=${props.banner[1].src}>
+                </div>
             </div>
-          </div>
-          <div class="hero-rt-image">
-              <img src=${props.banner[1].src}>
-          </div>
-      </div>
-   </section>
-   <section>
-       <div class="container d-col">
-           <div>
-               <p>our service</p>
-               <h3>What we do</h3>
-           </div>
-           <div 
-              id="service-content" 
-              class="service-rt-content d-row">
-           </div>
-       </div>
-   </section>
-   <section>
+    `
+    mainpage.appendChild(baner);
+
+    // creating service section
+    const service = document.createElement('section');
+    service.innerHTML = `
+            <div class="container d-col">
+                <div>
+                    <p>our service</p>
+                    <h3>What we do</h3>
+                </div>
+                <div 
+                id="service-content" 
+                class="service-rt-content d-row">
+                </div>
+            </div>
+    `
+    mainpage.appendChild(service);
+    // create a service content list
+    const serviceContent = document.getElementById('service-content');
+    props.service[1].content.forEach(item => {
+        serviceContent.appendChild(
+            Object.assign(
+                document.createElement('img'),
+                {
+                    src: item.img
+                }
+            )
+        )
+    });
+
+    // creating about section
+    const about = document.createElement('section');
+    about.innerHTML = `
         <div class="container d-flex">
             <div class="about-lt-content">
                 <p>why choose us</p>
@@ -39,20 +62,43 @@ const Main = (props) => {
             <div class="about-rt-image">
                 <img src=${props.about[1].src}>
             </div>
-        </div>
-   </section>
-   <section>
+        </div> 
+    `
+    mainpage.appendChild(about);
+
+    // creating work section
+    const work = document.createElement('section');
+    work.innerHTML = `
         <div class="container">
             <div>
                 <p>our Work</p>
                 <h3>Where We Do</h3>
             </div>
-            <div 
-               id="work-rt-content">
-            </div>
+            <div id="work-rt-content"></div>
         </div>
-   </section>
-   <section>
+    `
+    mainpage.appendChild(work);
+    // create work right content and render here
+    const workContent = document.getElementById('work-rt-content');
+    props.work[1].content.forEach((item) => {
+        workContent.appendChild(
+            Object.assign(
+                document.createElement('div'),
+                {
+                    className: "work-card",
+                    innerHTML: `
+                     <img src=${item.icon}>
+                     <h4>${item.title}</h4>
+                     <span>${item.para}</span>
+                     `
+                }
+            )
+        )
+    })
+
+    // creating process section
+    const process = document.createElement('section');
+    process.innerHTML = `
         <div class="container d-col">
             <div>
                 <p>our process</p>
@@ -62,81 +108,55 @@ const Main = (props) => {
                 <img src=${props.process.src}>
             </div>
         </div>
-   </section>
-   <section>
+    `
+    mainpage.appendChild(process);
+
+    // creating testimonial section
+    const testimonial = document.createElement('section');
+    testimonial.innerHTML = `
         <div class="container d-flex">
             <div class="testi-lt-content">
                 <p>testimonial</p>
                 <h3>What Our Happy Client Say</h3>
                 <div class="testi-slider">
-                     <div id="testi-content" class="d-row"></div>
-                     <button>prev</button>
-                     <button>next</button>
+                    <div id="testi-content" class="d-row"></div>
+                    <button>prev</button>
+                    <button>next</button>
                 </div>
             </div>
             <div id="testi-rt-image" class="testi-rt-image">
                 <img src=${props.testimonial[1].img}>
             </div>
         </div>
-   </section>
-   
-   `
-     // create a service content list
-     const serviceContent = document.getElementById('service-content');
-     props.service[1].content.forEach(item => {
-         serviceContent.appendChild(
-             Object.assign(
-                 document.createElement('img'),
-                 {
-                     src: item.img
-                 }
-             )
-         )
-     });
-     // create work right content and render here
-     const workContent = document.getElementById('work-rt-content');
-     props.work[1].content.forEach((item) => {
-         workContent.appendChild(
-             Object.assign(
-                 document.createElement('div'),
-                 {
-                     className: "work-card",
-                     innerHTML: `
-                     <img src=${item.icon}>
-                     <h4>${item.title}</h4>
-                     <span>${item.para}</span>
-                     `
-                 }
-             )
-         )
-     })
-     // create a testimonial content and render
-     const testiMonial = document.getElementById('testi-content');
-     props.testimonial[0].testi.forEach(item => {
-         const testItem = document.createElement('div');
-         testItem.className = "testi-item"
-         testiMonial.appendChild(testItem)
-         testItem.append(
-             Object.assign(
-                 document.createElement('h4'),
-                 {
-                     innerHTML: item.name
-                 }
-             ),
-             Object.assign(
-                 document.createElement('p'),
-                 {
-                     innerHTML: item.location
-                 }
-             ),
-             Object.assign(
-                 document.createElement('span'),
-                 {
-                     innerHTML: item.msg
-                 }
-             )
-         )
-     })
+    `
+    mainpage.appendChild(testimonial);
+    // create a testimonial content and render
+    const testiMonial = document.getElementById('testi-content');
+    props.testimonial[0].testi.forEach(item => {
+        const testItem = document.createElement('div');
+        testItem.className = "testi-item"
+        testiMonial.appendChild(testItem)
+        testItem.append(
+            Object.assign(
+                document.createElement('h4'),
+                {
+                    innerHTML: item.name
+                }
+            ),
+            Object.assign(
+                document.createElement('p'),
+                {
+                    innerHTML: item.location
+                }
+            ),
+            Object.assign(
+                document.createElement('span'),
+                {
+                    innerHTML: item.msg
+                }
+            )
+        )
+    })
 
     // creating a blog section
     const blog = document.createElement('section');
@@ -149,16 +169,16 @@ const Main = (props) => {
             <div id="blog-content" class="d-flex"></div>
         </div>
         `
-    mainpage.appendChild(blog)
-    const blogContent = document.getElementById('blog-content')
+    mainpage.appendChild(blog);
     // creating a blog item inside of blog content
-    props.blog[1].content.forEach((item)=>{
+    const blogContent = document.getElementById('blog-content')
+    props.blog[1].content.forEach((item) => {
         blogContent.appendChild(
             Object.assign(
                 document.createElement('div'),
                 {
-                    className : "blog-content-item",
-                    innerHTML : `
+                    className: "blog-content-item",
+                    innerHTML: `
                       <img src=${item.img}>
                       <h4>${item.title}</h4>
                       <p>${item.para}</p>
@@ -171,7 +191,7 @@ const Main = (props) => {
 
     // creating faq section
     const faq = document.createElement('section');
-    faq.innerHTML =`
+    faq.innerHTML = `
         <div class="container">
             <div>
                 <p>faq</p>
@@ -188,17 +208,17 @@ const Main = (props) => {
             Object.assign(
                 document.createElement('div'),
                 {
-                    className:"faq-content-item",
+                    className: "faq-content-item",
                     innerHTML: `<p>${item}</p>`
                 }
             )
         )
     })
-  
+
 
 }
 
-// call function with content
+// calling function with content
 fetch('./content.json')
     .then((res) => res.json())
     .then((data) => Main(data))

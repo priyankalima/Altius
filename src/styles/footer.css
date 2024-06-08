@@ -11,7 +11,8 @@
         margin-top: -70px;
     }
     .footer-detail{
-        height:50vh;
+        height:auto;
+        padding:20px 0;
     }
 
 }
