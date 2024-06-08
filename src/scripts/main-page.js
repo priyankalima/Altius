@@ -135,7 +135,7 @@ const Main = (props) => {
          )
      })
 
-    // creating a contact section
+    // creating a blog section
     const blog = document.createElement('section');
     blog.innerHTML = `
         <div class="container">
@@ -165,7 +165,32 @@ const Main = (props) => {
             )
         )
     })
-   
+
+    // creating faq section
+    const faq = document.createElement('section');
+    faq.innerHTML =`
+        <div class="container">
+            <div>
+                <p>faq</p>
+                <h3>Any Quary?</h3>
+            </div>
+           <div id="faq-content" class="faq-content"></div>
+       <div>
+    `
+    mainpage.appendChild(faq)
+    // creating faq inside faq items
+    const faqContent = document.getElementById('faq-content');
+    props.faq[1].content.forEach(item => {
+        faqContent.appendChild(
+            Object.assign(
+                document.createElement('div'),
+                {
+                    className:"faq-content-item",
+                    innerHTML: `<p>${item}</p>`
+                }
+            )
+        )
+    })
   
 
 }

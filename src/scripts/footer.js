@@ -1,9 +1,10 @@
 const Footer =()=>{
-    basebar.innerHTML = 
-    `
-    <div class="container">
-        <h1>this is footer page</h1>
-    </div>
+    basebar.innerHTML = `
+        <div class="container">
+            <div class="contact-msg">
+               
+            </div>
+        </div>
     `
  }
  Footer();
