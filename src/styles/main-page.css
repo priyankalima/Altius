@@ -131,4 +131,15 @@
             width: 100%;
         }
     }
+
+    section:nth-child(7){
+        background: #FBFBFB;
+        padding: 60px 0;
+
+        .contact-msg{
+            background: #FF682D;
+            border-radius: 10px;
+        }
+
+    }
 }
