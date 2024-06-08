@@ -4,7 +4,10 @@ const Main = (props) => {
       <div class="d-flex">
           <div class="hero-lt-content">
             <div class="container">
-                <h1>${props.banner[0].heading}</h1>
+                <h1 
+                class="animate__animated animate__bounce">
+                ${props.banner[0].heading}
+                </h1>
                 <p>${props.banner[0].para}</p>
                 <button>Get Started</button>
             </div>

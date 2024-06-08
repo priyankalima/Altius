@@ -2,7 +2,7 @@
 const file = [
     "/src/scripts/header.js",
     "/src/scripts/main-page.js",
-    "/src/scripts/footer.js"
+    "/src/scripts/footer.js",
 ]
 // render all the script file
 file.forEach((link)=>{
@@ -11,5 +11,4 @@ file.forEach((link)=>{
     document.body.appendChild(script);
     // console.log(script)
 })
-
 
