@@ -8,9 +8,9 @@ const Header = (props) => {
               <img src=${props[0].logo.src}>
               <div id="toggle-btn">
                     <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
-                    <label for="nav-checkbox" class="nav-toggle" >
-                        <img src="https://img.icons8.com/material-outlined/30/000000/menu--v1.png" class="open" />
-                        <img src="https://img.icons8.com/plumpy/30/000000/x.png" class="close" />
+                    <label for="nav-checkbox" class="nav-toggle" onclick="myFunction(this)" >
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
                     </label>
               </div>
            </div>
@@ -35,6 +35,7 @@ const Header = (props) => {
         mediaQuery(media)
     })
     mediaQuery(media);
+
     // create a menu list and render all the lists
     const menuList = document.getElementById('menu-list');
     props[1].menu.forEach(item => {
@@ -107,5 +108,7 @@ fetch('./content.json')
     .then((data) => Header(data.navbar))
 
 console.log(navbar)
+
+
 
 

@@ -12,3 +12,8 @@ file.forEach((link)=>{
     // console.log(script)
 })
 
+// menu toggle
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
+
