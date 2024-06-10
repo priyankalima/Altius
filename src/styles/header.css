@@ -55,7 +55,7 @@
             }
 
             .dropdown::after{
-                content:"﹀";
+                content:"";
             }
         }
 

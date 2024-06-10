@@ -1,5 +1,6 @@
 // creating footer section
 const Footer = (props) => {
+    console.log(props.icons)
     basebar.innerHTML = `
         <div class="container">
             <div class="contact-msg d-flex">
@@ -36,7 +37,8 @@ const Footer = (props) => {
                   </div>
             </div>
             <div>
-               <span>Copyright 2020 ALTIUS Graphics</span>
+            <span class="icon-icons8idea"></span>
+            <span class="icon-fluentarrow-growth-20-filled"></span>
             </div>
         </div>
     `
