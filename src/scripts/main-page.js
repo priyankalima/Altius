@@ -6,6 +6,16 @@ const Main = (props) => {
     baner.innerHTML = `
             <div class="d-flex">
                 <div class="hero-lt-content">
+                <svg   class="demo" viewBox="0 0 615 526" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M225 0.5L0.5 106.5V471L225 526L614.5 297L225 0.5Z" fill="url(#paint0_linear_276_12388)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_276_12388" x1="305.75" y1="0.5" x2="305.75" y2="531" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FCF8F6" />
+                        <stop offset="0.525706" stop-color="#FFE9E0" />
+                        <stop offset="1" stop-color="#FCF8F6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
                 <div class="container">
                     <h1 
                     class="animate__animated animate__bounce">

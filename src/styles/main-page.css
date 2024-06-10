@@ -8,10 +8,21 @@
         background: var(--background-color);
         padding: 60px 0;
 
+        .hero-lt-content{
+            .demo{
+                width:615px;
+                height:526px;
+                /* fill: linear-gradient(180deg, #fcf8f6 0%, #ffe9e0 52.57%, #fcf8f6 100%); */
+                @media only screen and (max-width: 600px) {
+                    display: none;
+                }
+            }
+        }
+
         .hero-rt-image {
             position: relative;
             overflow: hidden;
-
+            
             img {
                 width: 100%;
 
