@@ -16,6 +16,7 @@ const Header = (props) => {
            </div>
            <div class="menu">
               <div id="menu-list" class="d-flex"></div>
+              <span class="ep--arrow-down-bold"></span>
               <button>Get a Quote</button>
            </div>
       </div>
