@@ -8,13 +8,42 @@
         background: var(--background-color);
         padding: 60px 0;
 
-        .hero-lt-content{
-            .demo{
-                width:615px;
-                height:526px;
+        .hero-lt-content {
+            position: relative;
+
+            .demo {
+                width: 615px;
+                height: 526px;
+
                 /* fill: linear-gradient(180deg, #fcf8f6 0%, #ffe9e0 52.57%, #fcf8f6 100%); */
                 @media only screen and (max-width: 600px) {
                     display: none;
+                }
+            }
+
+            .header-title {
+                position: absolute;
+                top: 0;
+                left: 10vw;
+
+                @media only screen and (max-width: 600px) {
+                    position: relative;
+                    left: auto;
+                }
+
+                h1 {
+                    font-weight: 600;
+                    font-size: 50px;
+                    color:var(--dark-color);
+
+                }
+
+                .custome-heading-title {
+                    background: linear-gradient(92deg, #ff682d 0%, #f78e64 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 800;
                 }
             }
         }
@@ -22,7 +51,7 @@
         .hero-rt-image {
             position: relative;
             overflow: hidden;
-            
+
             img {
                 width: 100%;
 
@@ -122,44 +151,49 @@
             /* background:green; */
             overflow: auto;
         }
-        #testi-content{
+
+        #testi-content {
             width: 100%;
         }
-        .testi-item{
-            width:300px !important;
-            margin:10px;
+
+        .testi-item {
+            width: 300px !important;
+            margin: 10px;
             background: #FAEBE4;
             display: flex;
             flex-direction: column;
-            padding:20px;
+            padding: 20px;
         }
-        .d-row{
+
+        .d-row {
             flex-shrink: 0;
         }
-       
+
 
         img {
             width: 100%;
         }
     }
 
-    section:nth-child(7){
+    section:nth-child(7) {
         background: #FBFBFB;
         padding: 60px 0;
 
-        .contact-msg{
+        .contact-msg {
             background: #FF682D;
             border-radius: 10px;
         }
 
     }
-    section:nth-child(8){
+
+    section:nth-child(8) {
         background: #F6F6F6;
         padding: 60px 0;
-        .faq-content-item{
+
+        .faq-content-item {
             background-color: #ffffff;
-            margin:10px 0;
-            padding:10px;
+            margin: 10px 0;
+            padding: 10px;
         }
     }
 }

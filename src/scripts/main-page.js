@@ -16,10 +16,11 @@ const Main = (props) => {
                         </linearGradient>
                     </defs>
                 </svg>
-                <div class="container">
+                <div class="container header-title">
                     <h1 
                     class="animate__animated animate__bounce">
-                    ${props.banner[0].heading}
+                    Sign of <br> 
+                    <span class="custome-heading-title">Good Times</span>
                     </h1>
                     <p>${props.banner[0].para}</p>
                     <button>Get Started</button>

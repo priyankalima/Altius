@@ -21,6 +21,7 @@ body {
     --theme-color: #F65D21;
     --background-color: #FCF8F6;
     --light-color: #ffffff;
+    --dark-color: #010919;
 
     /* font setup */
     --bold : 700;
@@ -62,5 +63,7 @@ body {
     display: flex;
     flex-direction: row;
 }
+
+/*  */
 
 
