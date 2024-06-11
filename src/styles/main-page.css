@@ -195,6 +195,11 @@
                 width: 100%;
             }
         }
+        .testi-rt-image{
+            @media only screen and (max-width: 600px) {
+                display: none;
+            }
+        }
 
         .testi-slider {
             width: 100%;

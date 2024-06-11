@@ -9,6 +9,13 @@
     .contact-msg {
         background: var(--theme-color);
         margin-top: -70px;
+        padding:20px;
+        border-radius: 10px;
+        @media only screen and (max-width: 600px) {
+            img{
+                display:none;
+            }
+        }
     }
     .footer-detail{
         height:auto;
