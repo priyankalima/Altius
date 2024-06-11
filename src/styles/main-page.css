@@ -46,6 +46,17 @@
                     font-weight: 800;
                 }
             }
+            button{
+                padding:10px 25px;
+                border:1px solid #f78e64;
+                background:transparent;
+                border-radius: 5px;
+
+                span{
+                    margin-left: 10px;
+                }
+
+            }
         }
 
         .hero-rt-image {

@@ -23,7 +23,7 @@ const Main = (props) => {
                     <span class="custome-heading-title">Good Times</span>
                     </span>
                     <p>${props.banner[0].para}</p>
-                    <button>Get Started</button>
+                    <button>Get Started <i class="icon-getstarted"></i></button>
                 </div>
                 </div>
                 <div class="hero-rt-image">
