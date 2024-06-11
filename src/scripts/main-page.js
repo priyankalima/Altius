@@ -38,8 +38,8 @@ const Main = (props) => {
     service.innerHTML = `
             <div class="container d-col">
                 <div>
-                    <p>our service</p>
-                    <h3>What we do</h3>
+                    <p class="title">our service</p>
+                    <span class="title-heading">What we do</span>
                 </div>
                 <div 
                 id="service-content" 
@@ -66,8 +66,8 @@ const Main = (props) => {
     about.innerHTML = `
         <div class="container d-flex">
             <div class="about-lt-content">
-                <p>why choose us</p>
-                <h3>${props.about[0].heading}</h3>
+                <p class="title">why choose us</p>
+                <span class="title-heading">${props.about[0].heading}</span>
                 <span>${props.about[0].para}</span>
             </div>
             <div class="about-rt-image">
@@ -82,8 +82,8 @@ const Main = (props) => {
     work.innerHTML = `
         <div class="container">
             <div>
-                <p>our Work</p>
-                <h3>Where We Do</h3>
+                <p class="title">our Work</p>
+                <span class="title-heading">Where We Do</span>
             </div>
             <div id="work-rt-content"></div>
         </div>
@@ -112,8 +112,8 @@ const Main = (props) => {
     process.innerHTML = `
         <div class="container d-col">
             <div>
-                <p>our process</p>
-                <h3>What We Do</h3>
+                <p class="title">our process</p>
+                <span class="title-heading">What We Do</span>
             </div>
             <div id="work-rt-content">
                 <img src=${props.process.src}>
@@ -127,8 +127,8 @@ const Main = (props) => {
     testimonial.innerHTML = `
         <div class="container d-flex">
             <div class="testi-lt-content">
-                <p>testimonial</p>
-                <h3>What Our Happy Client Say</h3>
+                <p class="title">testimonial</p>
+                <span class="title-heading">What Our Happy Client Say</span>
                 <div class="testi-slider">
                     <div id="testi-content" class="d-row"></div>
                     <button>prev</button>
@@ -174,8 +174,8 @@ const Main = (props) => {
     blog.innerHTML = `
         <div class="container">
             <div>
-                <p>blog</p>
-                <h3>Find Out What’s New</h3>
+                <p class="title">blog</p>
+                <span class="title-heading">Find Out What’s New</span>
             </div>
             <div id="blog-content" class="d-flex"></div>
         </div>
@@ -205,8 +205,8 @@ const Main = (props) => {
     faq.innerHTML = `
         <div class="container">
             <div>
-                <p>faq</p>
-                <h3>Any Quary?</h3>
+                <p class="title">faq</p>
+                <span class="title-heading">Any Quary?</span>
             </div>
            <div id="faq-content" class="faq-content"></div>
        <div>
