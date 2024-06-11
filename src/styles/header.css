@@ -12,7 +12,7 @@
             display: none;
         }
         .nav-toggle {
-
+ 
             .bar1,
             .bar2 {
                 width: 25px;
@@ -49,14 +49,40 @@
 
         #menu-list {
             gap: 10px;
+            
 
             li {
                 list-style: none;
-            }
+                display:flex;
+                flex-direction: column;
+                gap:5px;
+                margin:0 5px;
+                
+                div{
+                    gap:10px;
+                }
 
-            .dropdown::after{
-                content:"";
+                a{
+                    font-weight: var(--semi-bold);
+                    color:  #010919;
+                    opacity: 60%;
+                    cursor: pointer;
+                }
+                .dropList{
+                    display: none;
+                    background-color: #fff;
+                    padding:10px;
+                    border-radius: 10px;
+                    li a{
+                        text-decoration: none;
+                        padding:10px 0;
+                    }
+                }
             }
+            .dropdown:hover  .dropList{
+                display: block
+            }
+            
         }
 
         button {

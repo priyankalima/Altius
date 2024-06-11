@@ -1,17 +1,16 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('./icomoon.eot?v6lcbq');
-  src: url('./icomoon.eot?v6lcbq#iefix') format('embedded-opentype'),
-       url('./icomoon.ttf?v6lcbq') format('truetype'),
-       url('./icomoon.woff?v6lcbq') format('woff'),
-       url('./icomoon.svg?v6lcbq#icomoon') format('svg');
+  src:  url('./icomoon.eot?chg8n3');
+  src:  url('./icomoon.eot?chg8n3#iefix') format('embedded-opentype'),
+    url('./icomoon.ttf?chg8n3') format('truetype'),
+    url('./icomoon.woff?chg8n3') format('woff'),
+    url('./icomoon.svg?chg8n3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -26,27 +25,61 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-fluentpremium-person-24-regular:before {
+.icon-food:before {
+  content: "\e900";
+  color: #ff682d;
+}
+.icon-education:before {
+  content: "\e901";
+  color: #ff682d;
+}
+.icon-oil:before {
   content: "\e902";
   color: #ff682d;
 }
-
-.icon-fluentarrow-growth-20-filled:before {
+.icon-service:before {
   content: "\e903";
   color: #ff682d;
 }
-
-.icon-icons8idea:before {
+.icon-transport:before {
   content: "\e904";
   color: #ff682d;
 }
-
-.icon-bxtime:before {
+.icon-medical:before {
   content: "\e905";
   color: #ff682d;
 }
-
-.icon-mdi_badge-outline:before {
-  content: "\e900";
+.icon-airport:before {
+  content: "\e906";
   color: #ff682d;
+}
+.icon-getstarted:before {
+  content: "\e908";
+  color: #ff682d;
+}
+.icon-security:before {
+  content: "\e909";
+  color: #ff682d;
+}
+.icon-growth:before {
+  content: "\e90a";
+  color: #ff682d;
+}
+.icon-idea:before {
+  content: "\e90b";
+  color: #ff682d;
+}
+.icon-time:before {
+  content: "\e90c";
+  color: #ff682d;
+}
+.icon-protect:before {
+  content: "\e90d";
+  color: #ff682d;
+}
+.icon-downarrow:after {
+  content: "\e90e";
+  color:  #010919;
+  opacity: 60%;
+  font-weight: var(--semi-bold);
 }

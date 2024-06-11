@@ -59,47 +59,60 @@ const Header = (props) => {
     // first list element
     const firstList = document.getElementsByTagName('li')[0];
     firstList.className = "dropdown";
-    // frist link element
-    const firstLink = document.getElementsByTagName('a')[0];
-    firstLink.className = "dropbtn";
+
+    // firstLink.className = "dropbtn ";
+    firstList.innerHTML =`
+    <div class="d-col">
+      <div class="d-row">
+        <a class="dropbtn">Capability</a>
+        <span class="icon-downarrow"></span>
+      </div>
+      <div></div>
+    </div>
+    `
     // second list element
     const secondList = document.getElementsByTagName('li')[1];
     secondList.className = "dropdown";
-    // second link element
-    const secondLink = document.getElementsByTagName('a')[1];
-    secondLink.className = "dropbtn"
-
-    // for (let i = 0; i < 2; i++) {
-    //     // create dropdownl list
-    //     const droplist = document.createElement('div');
-    //     droplist.className = "dropList"
-    //     // count droplists
-    //     const droplists = document.getElementsByClassName('dropList').length;
-    //     // if droplist is 0 show append the list into firstList else secondList
-    //     if (droplists == 0) {
-    //         firstList.appendChild(droplist);
-    //         // add innerHTML to droplist
-    //         droplist.innerHTML = `
-    //             <li><a href="">Architectural Graphics</a></li>
-    //             <li><a href="">Construction Graphics</a></li>
-    //             <li><a href="">Exhibit & Trade Show Signal</a></li>
-    //             <li><a href="">Corporate Branding & Business Graphics</a></li>
-    //         `
-    //     }
-    //     else {
-    //         secondList.appendChild(droplist);
-    //         // add innerHTML to droplist
-    //         droplist.innerHTML = `
-    //             <li><a href="">Airport & City Transport</a></li>
-    //             <li><a href="">Healthcare & Hospital</a></li>
-    //             <li><a href="">Logistics & Distribution</a></li>
-    //             <li><a href="">Utility & Services</a></li>
-    //             <li><a href="">Oil & Gas</a></li>
-    //             <li><a href="">Government & Educational Institute</a></li>
-    //             <li><a href="">Food & Beverage Distribution</a></li>
-    //         `
-    //     }
-    // }
+    secondList.innerHTML =`
+    <div class="d-col">
+      <div class="d-row">
+        <a class="dropbtn">Our Service</a>
+        <span class="icon-downarrow"></span>
+      </div>
+      <div></div>
+    </div>
+    `
+    for (let i = 0; i < 2; i++) {
+        // create dropdownl list
+        const droplist = document.createElement('div');
+        droplist.className = "dropList"
+        // count droplists
+        const droplists = document.getElementsByClassName('dropList').length;
+        // if droplist is 0 show append the list into firstList else secondList
+        if (droplists == 0) {
+            firstList.appendChild(droplist);
+            // add innerHTML to droplist
+            droplist.innerHTML = `
+                <li><a href="">Architectural Graphics</a></li>
+                <li><a href="">Construction Graphics</a></li>
+                <li><a href="">Exhibit & Trade Show Signal</a></li>
+                <li><a href="">Corporate Branding & Business Graphics</a></li>
+            `
+        }
+        else {
+            secondList.appendChild(droplist);
+            // add innerHTML to droplist
+            droplist.innerHTML = `
+                <li><a href="">Airport & City Transport</a></li>
+                <li><a href="">Healthcare & Hospital</a></li>
+                <li><a href="">Logistics & Distribution</a></li>
+                <li><a href="">Utility & Services</a></li>
+                <li><a href="">Oil & Gas</a></li>
+                <li><a href="">Government & Educational Institute</a></li>
+                <li><a href="">Food & Beverage Distribution</a></li>
+            `
+        }
+    }
 
 }
 // caling function with content
