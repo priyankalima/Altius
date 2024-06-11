@@ -11,6 +11,7 @@ const Header = (props) => {
                     <label for="nav-checkbox" class="nav-toggle" onclick="myFunction(this)" >
                         <div class="bar1"></div>
                         <div class="bar2"></div>
+                        <div class="bar3"></div>
                     </label>
               </div>
            </div>
