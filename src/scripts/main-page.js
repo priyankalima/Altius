@@ -59,7 +59,7 @@ const Main = (props) => {
                 }
             )
         )
-    });
+    }); 
 
     // creating about section
     const about = document.createElement('section');
@@ -67,8 +67,13 @@ const Main = (props) => {
         <div class="container d-flex">
             <div class="about-lt-content">
                 <p class="title">why choose us</p>
-                <span class="title-heading">${props.about[0].heading}</span>
-                <span>${props.about[0].para}</span>
+                <span class="title-heading">${props.about[0].heading}</span><br>
+                <span>${props.about[0].para}</span><br>
+                <div class="exp-card">
+                    <span style="font-size:30px;">25+</span>
+                    <span> Years Of Experience in Graphic Service</span>
+                </div>
+                <div id="about-short-list"></div>
             </div>
             <div class="about-rt-image">
                 <img src=${props.about[1].src}>
@@ -76,6 +81,21 @@ const Main = (props) => {
         </div> 
     `
     mainpage.appendChild(about);
+    // create a about shtest lists
+    const aboutList = document.getElementById('about-short-list');
+    props.about[0].lists.forEach(item=>{
+        aboutList.appendChild(
+            Object.assign(
+                document.createElement('div'),
+                {
+                    className : "list-items",
+                    innerHTML : `
+                      <img src=${item.icon}> <span>${item.list}</span>
+                    `
+                }
+            )
+        )
+    })
 
     // creating work section
     const work = document.createElement('section');

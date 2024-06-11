@@ -18,11 +18,11 @@ function myFunction(x) {
   }
 
 function toggleBtn() {
-    var x = document.getElementById("menu");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    var toggle = document.getElementById("menu");
+    if (toggle.style.display === "block") {
+        toggle.style.display = "none";
     } else {
-        x.style.display = "block";
+        toggle.style.display = "block";
     }
 }
 
