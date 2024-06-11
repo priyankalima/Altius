@@ -17,11 +17,11 @@ const Main = (props) => {
                     </defs>
                 </svg>
                 <div class="container header-title">
-                    <h1 
+                    <span
                     class="animate__animated animate__bounce">
                     Sign of <br> 
                     <span class="custome-heading-title">Good Times</span>
-                    </h1>
+                    </span>
                     <p>${props.banner[0].para}</p>
                     <button>Get Started</button>
                 </div>
