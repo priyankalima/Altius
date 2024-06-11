@@ -7,7 +7,7 @@ const Header = (props) => {
            <div class="logo">
               <img src=${props[0].logo.src}>
               <div id="toggle-btn">
-                    <input type="checkbox" id="nav-checkbox" class="nav-checkbox" />
+                    <input type="checkbox" id="nav-checkbox" />
                     <label for="nav-checkbox" class="nav-toggle" onclick="myFunction(this)" >
                         <div class="bar1"></div>
                         <div class="bar2"></div>
