@@ -1,6 +1,6 @@
 #navbar {
     width: 100%;
-    background:  var(--background-color);
+    background: var(--background-color);
     padding: 30px 0;
 
     .logo {
@@ -8,34 +8,36 @@
             display: flex;
             justify-content: space-between;
         }
-        input[type = "checkbox"]{
-            display: none;
-        }
-        #toggle-btn{
-            width:40px;
-            height:30px;
-            padding:5px;
-            background: #FFEEE6;
-            border-radius: 5px;
-        }
-        .nav-toggle {
-             display: flex;
-             flex-direction: column;
-             align-items:center;
-             /* align-content: center; */
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    #toggle-btn {
+        width: 40px;
+        height: 30px;
+        padding: 5px;
+        background: #FFEEE6;
+        border-radius: 5px;
+        .toggle{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
 
             .bar1 {
                 width: 25px;
                 height: 3px;
-                background-color:#563D33;
+                background-color: #563D33;
                 margin: 6px 0;
                 transition: 0.4s;
                 border-radius: 10px;
             }
-            .bar2{
+    
+            .bar2 {
                 width: 15px;
                 height: 3px;
-                background-color:#563D33;
+                background-color: #563D33;
                 margin: 6px 0;
                 transition: 0.4s;
                 border-radius: 10px;
@@ -50,6 +52,7 @@
             transform: translate(0, -7px) rotate(45deg);
             width: 25px;
         }
+
     }
 
     .menu {
@@ -72,36 +75,39 @@
 
             li {
                 list-style: none;
-                display:flex;
+                display: flex;
                 flex-direction: column;
-                gap:5px;
-                margin:0 5px;
-                
-                div{
-                    gap:10px;
+                gap: 5px;
+                margin: 0 5px;
+
+                div {
+                    gap: 10px;
                 }
 
-                a{
+                a {
                     font-weight: var(--semi-bold);
-                    color:  #010919;
+                    color: #010919;
                     opacity: 60%;
                     cursor: pointer;
                 }
-                .dropList{
+
+                .dropList {
                     display: none;
                     background-color: #fff;
-                    padding:10px;
+                    padding: 10px;
                     border-radius: 10px;
-                    li a{
+
+                    li a {
                         text-decoration: none;
-                        padding:10px 0;
+                        padding: 10px 0;
                     }
                 }
             }
-            .dropdown:hover  .dropList{
+
+            .dropdown:hover .dropList {
                 display: block
             }
-            
+
         }
 
         button {
@@ -112,7 +118,8 @@
             color: var(--light-color);
         }
     }
-    #nav-toggle:checked ~ .menu{
+
+    #nav-toggle:checked~.menu {
         @media only screen and (max-width: 600px) {
             /* display: flex; */
             display: block;

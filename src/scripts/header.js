@@ -6,16 +6,14 @@ const Header = (props) => {
       <div class="container d-flex">
            <div class="logo">
               <img src=${props[0].logo.src}>
-              <div id="toggle-btn">
-                    <input type="checkbox" id="nav-checkbox" />
-                    <label for="nav-checkbox" class="nav-toggle" onclick="myFunction(this)" >
+              <div id="toggle-btn" onclick="toggleBtn()">
+                    <div onclick="myFunction(this)" class="toggle">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </label>
+                    </div>
               </div>
            </div>
-           <div class="menu">
+           <div class="menu" id="menu">
               <div id="menu-list" class="d-flex"></div>
               <button>Get a Quote</button>
            </div>
