@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
     /* padding:60px 0; */
-    color: #222;
+    /* color: #222; */
 
     section:nth-child(1) {
         background: var(--background-color);
