@@ -84,9 +84,27 @@
             background: #fafafa;
             width: 100%;
             overflow: scroll;
-
-            img {
-                width: 100%;
+            gap:10px;
+            .service-card{
+                background: #e8e8e877;
+                border-radius: 5px;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+                button{
+                    padding:10px 25px;
+                    border-radius: 5px;
+                    background: #FF682D;
+                    color:#ffffff;
+                    border:none;
+                }
+                .service-card-size{
+                    padding:10px;
+                }
+                @media only screen and (max-width: 600px) {
+                   flex-shrink: 0;
+                }
             }
         }
 

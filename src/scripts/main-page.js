@@ -53,9 +53,16 @@ const Main = (props) => {
     props.service[1].content.forEach(item => {
         serviceContent.appendChild(
             Object.assign(
-                document.createElement('img'),
+                document.createElement('div'),
                 {
-                    src: item.img
+                    className : "service-card",
+                    innerHTML : `
+                      <img src=${item.img}>
+                      <div class="service-card-size">
+                        <p>${item.title}</p>
+                        <button>more</button>
+                      <div>
+                    `
                 }
             )
         )
