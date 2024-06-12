@@ -269,10 +269,18 @@
         background: #FBFBFB;
         padding: 60px 0;
 
-        .contact-msg {
-            background: #FF682D;
-            border-radius: 10px;
+        .blog-content-item{
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            h4,p,a{
+                padding:10px;
+            }
+            img{
+                width:100%;
+                border-radius: 5px 5px  0 0;
+            }
         }
+
 
     }
 
