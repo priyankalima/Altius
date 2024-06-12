@@ -144,7 +144,7 @@ const Main = (props) => {
                 <div class="testi-slider">
                     <div id="testi-content" class="d-row"></div>
                     <button>prev</button>
-                    <button>next</button>
+                    <button>next</button> 
                 </div>
             </div>
             <div id="testi-rt-image" class="testi-rt-image">
