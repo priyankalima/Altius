@@ -23,12 +23,13 @@
 
             .header-title {
                 position: absolute;
-                top: 0;
+                top: 20vh;
                 left: 10vw;
 
                 @media only screen and (max-width: 600px) {
                     position: relative;
                     left: auto;
+                    top:auto;
                 }
 
                 span {
