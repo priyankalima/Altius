@@ -95,7 +95,7 @@
                 }
                 p{
                     font-weight: var(--bold);
-                    font-size: 24px;
+                    font-size: 18px;
                 }
                 button{
                     padding:10px 25px;
@@ -107,7 +107,7 @@
                 .service-card-size{
                     padding:10px;
                     position: absolute;
-                    bottom:10vh;
+                    bottom:3vh;
                     /* left:8vw; */
                     color:#ffffff;
                 }
