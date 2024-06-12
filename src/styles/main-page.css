@@ -207,6 +207,9 @@
             .work-card:last-child{
                 flex-grow:0;
                 width:28.5% !important;
+                @media only screen and (max-width: 600px) {
+                    width:100% !important;
+                }
             }
         }
     }
