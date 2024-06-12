@@ -112,7 +112,7 @@ const Main = (props) => {
                 <p class="title">our Work</p>
                 <span class="title-heading">Where We Do</span>
             </div>
-            <div id="work-rt-content"></div>
+            <div id="work-rt-content" class=" work-rt-content"></div>
         </div>
     `
     mainpage.appendChild(work);
@@ -133,21 +133,6 @@ const Main = (props) => {
             )
         )
     })
-
-    // creating process section
-    const process = document.createElement('section');
-    process.innerHTML = `
-        <div class="container d-col">
-            <div>
-                <p class="title">our process</p>
-                <span class="title-heading">What We Do</span>
-            </div>
-            <div id="work-rt-content">
-                <img src=${props.process.src}>
-            </div>
-        </div>
-    `
-    mainpage.appendChild(process);
 
     // creating testimonial section
     const testimonial = document.createElement('section');
