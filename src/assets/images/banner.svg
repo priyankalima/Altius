@@ -744,6 +744,9 @@
   <path fill="#151515" stroke="#000" d="m543.5 238.5 8 5c-8.8 0-9 3-8 4.5l14.5 19c-.5-.5-1.1-1 .5 1s-.667 2.167-2 2c-5.6-5.2-11-3.5-13-2-2.5-.5-7.5-2.8-7.5-8s-5.333-3.833-8-2.5l-5.5-9.5c1.2-6.4 5.833-4.333 8-2.5 2.8.4 6.167-5.833 7.5-9 0 6 3.667 3.833 5.5 2Z"/>
   <path fill="url(#bA)" d="M328.5 60C222.667 79.5 9.6 148.6 4 269-11.5 210 31.7 85.6 328.5 60Z"/>
   <path fill="url(#bB)" d="M621 330.5c45.2-77.6-67.333-189-120-232.5h190.5v224.5c9.2 18.4-44.333 5.167-70.5 8Z"/>
+  <path fill="#000" stroke="#000" d="M92.5 207.5c-22.4-6.4-57.333 18.667-72 32 12.4-6.8 48.833-9.167 65.5-9.5 16.8-18.4 11.333-22.667 6.5-22.5Z"/>
+  <path fill="url(#bC)" d="m698 99 24-73c-34.499-10-91.996-10-121.997-10H600c27.2 10 46.833 61.167 49 83h49Z"/>
+  <path fill="url(#bD)" stroke="#000" d="M331.5 60.5 379 50l26 43.5-41.5-4.5c-18.8-5.2-29.167-21.167-32-28.5Z"/>
   <defs>
     <linearGradient id="by" x1="516.5" x2="503.75" y1="96" y2="26" gradientUnits="userSpaceOnUse">
       <stop stop-color="#E59F84"/>
@@ -760,6 +763,14 @@
     <linearGradient id="bB" x1="597" x2="693" y1="200" y2="202" gradientUnits="userSpaceOnUse">
       <stop stop-color="#D9D9D9" stop-opacity=".2"/>
       <stop offset="1" stop-color="#F78457"/>
+    </linearGradient>
+    <linearGradient id="bC" x1="709.5" x2="651" y1="66" y2="57.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BCBCBC"/>
+      <stop offset="1" stop-color="#DBDBDB" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bD" x1="377" x2="350.5" y1="72" y2="82.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D9D9D9" stop-opacity="0"/>
+      <stop offset="1" stop-color="#B9B9B9"/>
     </linearGradient>
   </defs>
 </svg>
