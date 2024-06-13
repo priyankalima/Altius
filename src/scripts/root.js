@@ -16,7 +16,7 @@ file.forEach((link)=>{
 function myFunction(x) {
     x.classList.toggle("change");
   }
-
+// toggle button
 function toggleBtn() {
     var toggle = document.getElementById("menu");
     if (toggle.style.display === "block") {
