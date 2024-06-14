@@ -259,16 +259,25 @@
             margin-top: 50px;
             width: 100%;
             /* background:green; */
+
+            button{
+                width:40px;
+                height:40px;
+                border-radius: 50%;
+                border:none;
+                background-color: #ff682d;
+                color:#ffffff;
+            }
         }
 
         #testi-content {
             width: 100%;
-            overflow: auto;
-            gap: 20px;
+            overflow:scroll;
+            /* gap: 20px; */
         }
 
         .testi-item {
-            width: 308px !important;
+            width: 100% !important;
             background: #FAEBE4;
             display: flex;
             flex-direction: column;
@@ -286,7 +295,9 @@
     section:nth-child(6) {
         background: #FBFBFB;
         padding: 60px 0;
-
+        .d-flex{
+            gap:20px;
+        }
         .blog-content-item {
             background-color: #f1f1f1;
             border-radius: 5px;
