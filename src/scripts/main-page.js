@@ -33,40 +33,6 @@ const Main = (props) => {
     `
     mainpage.appendChild(baner);
 
-    // creating service section
-    const service = document.createElement('section');
-    service.innerHTML = `
-            <div class="container d-col">
-                <div>
-                    <p class="title">our service</p>
-                    <span class="title-heading">What we do</span>
-                </div>
-                <div 
-                id="service-content" 
-                class="service-rt-content d-row">
-                </div>
-            </div>
-    `
-    mainpage.appendChild(service);
-    // create a service content list
-    const serviceContent = document.getElementById('service-content');
-    props.service[1].content.forEach(item => {
-        serviceContent.appendChild(
-            Object.assign(
-                document.createElement('div'),
-                {
-                    className : "service-card",
-                    innerHTML : `
-                      <img src=${item.img}>
-                      <div class="service-card-size">
-                        <p>${item.title}</p>
-                        <button>more</button>
-                      <div>
-                    `
-                }
-            )
-        )
-    }); 
 
     // creating about section
     const about = document.createElement('section');
@@ -103,6 +69,41 @@ const Main = (props) => {
             )
         )
     })
+
+    // creating service section
+    const service = document.createElement('section');
+    service.innerHTML = `
+            <div class="container d-col">
+                <div>
+                    <p class="title">our service</p>
+                    <span class="title-heading">What we do</span>
+                </div>
+                <div 
+                id="service-content" 
+                class="service-rt-content d-row">
+                </div>
+            </div>
+    `
+    mainpage.appendChild(service);
+    // create a service content list
+    const serviceContent = document.getElementById('service-content');
+    props.service[1].content.forEach(item => {
+        serviceContent.appendChild(
+            Object.assign(
+                document.createElement('div'),
+                {
+                    className : "service-card",
+                    innerHTML : `
+                      <img src=${item.img}>
+                      <div class="service-card-size">
+                        <p>${item.title}</p>
+                        <button>more</button>
+                      <div>
+                    `
+                }
+            )
+        )
+    }); 
 
     // creating work section
     const work = document.createElement('section');
