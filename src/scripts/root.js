@@ -26,5 +26,18 @@ function toggleBtn() {
     }
 }
 
+// add scroll left and right button
 
+
+const nextBtn =()=>{
+    const slider = document.getElementById('testi-slider');
+    const width = slider.clientWidth;
+    slider.scrollBy(width,0);
+}
+
+const prevBtn =()=>{
+    const slider = document.getElementById('testi-slider');
+    const width = slider.clientWidth ;
+   slider.scrollBy(-width,0)
+}
 

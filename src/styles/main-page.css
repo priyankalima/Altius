@@ -268,7 +268,7 @@
             margin-top: 50px;
             width: 100%;
             display: flex;
-            overflow: scroll;
+            overflow:hidden;
             /* background:green; */
 
             #testi-content {
