@@ -143,10 +143,30 @@ const Main = (props) => {
                 <p class="title">testimonial</p>
                 <span class="title-heading">What Our Happy Client Say</span>
                 <div class="testi-slider">
-                    <div id="testi-content" class="d-row"></div>
-                    <button>prev</button>
-                    <button>next</button> 
+                    <div id="testi-content">
+                        <div class="testi-item">
+                            <h4>something</h4>
+                            <p>someting</p>
+                            <span>somethig</span>
+                        </div>
+                    </div>
+                     <div id="testi-content">
+                        <div class="testi-item">
+                            <h4>something</h4>
+                            <p>someting</p>
+                            <span>somethig</span>
+                        </div>
+                    </div>
+                    <div id="testi-content">
+                    <div class="testi-item">
+                        <h4>something</h4>
+                        <p>someting</p>
+                        <span>somethig</span>
+                    </div>
                 </div>
+                </div>
+                <img src=${props.testimonial[0].leftBtn} alt="leftBtn">
+                <img src=${props.testimonial[0].rightBtn} alt="rightBtn">
             </div>
             <div id="testi-rt-image" class="testi-rt-image">
                 <img src=${props.testimonial[1].img}>
@@ -155,32 +175,32 @@ const Main = (props) => {
     `
     mainpage.appendChild(testimonial);
     // create a testimonial content and render
-    const testiMonial = document.getElementById('testi-content');
-    props.testimonial[0].testi.forEach(item => {
-        const testItem = document.createElement('div');
-        testItem.className = "testi-item"
-        testiMonial.appendChild(testItem)
-        testItem.append(
-            Object.assign(
-                document.createElement('h4'),
-                {
-                    innerHTML: item.name
-                }
-            ),
-            Object.assign(
-                document.createElement('p'),
-                {
-                    innerHTML: item.location
-                }
-            ),
-            Object.assign(
-                document.createElement('span'),
-                {
-                    innerHTML: item.msg
-                }
-            )
-        )
-    })
+    // const testiMonial = document.getElementById('testi-content');
+    // props.testimonial[0].testi.forEach(item => {
+    //     const testItem = document.createElement('div');
+    //     testItem.className = "testi-item"
+    //     testiMonial.appendChild(testItem)
+    //     testItem.append(
+    //         Object.assign(
+    //             document.createElement('h4'),
+    //             {
+    //                 innerHTML: item.name
+    //             }
+    //         ),
+    //         Object.assign(
+    //             document.createElement('p'),
+    //             {
+    //                 innerHTML: item.location
+    //             }
+    //         ),
+    //         Object.assign(
+    //             document.createElement('span'),
+    //             {
+    //                 innerHTML: item.msg
+    //             }
+    //         )
+    //     )
+    // })
 
     // creating a blog section
     const blog = document.createElement('section');
