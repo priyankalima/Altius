@@ -1,7 +1,7 @@
 // create js file object
 const file = [
     "/src/scripts/header.js",
-    "/src/scripts/main-page.js",
+    "/src/scripts/mainpage.js",
     "/src/scripts/footer.js",
 ]
 // render all the script file
@@ -25,4 +25,6 @@ function toggleBtn() {
         toggle.style.display = "block";
     }
 }
+
+
 

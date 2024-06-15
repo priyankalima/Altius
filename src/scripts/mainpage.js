@@ -56,13 +56,13 @@ const Main = (props) => {
     mainpage.appendChild(about);
     // create a about shtest lists
     const aboutList = document.getElementById('about-short-list');
-    props.about[0].lists.forEach(item=>{
+    props.about[0].lists.forEach(item => {
         aboutList.appendChild(
             Object.assign(
                 document.createElement('div'),
                 {
-                    className : "list-items",
-                    innerHTML : `
+                    className: "list-items",
+                    innerHTML: `
                       <img src=${item.icon}> <span>${item.list}</span>
                     `
                 }
@@ -92,8 +92,8 @@ const Main = (props) => {
             Object.assign(
                 document.createElement('div'),
                 {
-                    className : "service-card",
-                    innerHTML : `
+                    className: "service-card",
+                    innerHTML: `
                       <img src=${item.img}>
                       <div class="service-card-size">
                         <p>${item.title}</p>
@@ -103,7 +103,7 @@ const Main = (props) => {
                 }
             )
         )
-    }); 
+    });
 
     // creating work section
     const work = document.createElement('section');
@@ -142,29 +142,7 @@ const Main = (props) => {
             <div class="testi-lt-content">
                 <p class="title">testimonial</p>
                 <span class="title-heading">What Our Happy Client Say</span>
-                <div class="testi-slider">
-                    <div id="testi-content">
-                        <div class="testi-item">
-                            <h4>something</h4>
-                            <p>someting</p>
-                            <span>somethig</span>
-                        </div>
-                    </div>
-                     <div id="testi-content">
-                        <div class="testi-item">
-                            <h4>something</h4>
-                            <p>someting</p>
-                            <span>somethig</span>
-                        </div>
-                    </div>
-                    <div id="testi-content">
-                    <div class="testi-item">
-                        <h4>something</h4>
-                        <p>someting</p>
-                        <span>somethig</span>
-                    </div>
-                </div>
-                </div>
+                <div class="testi-slider" id="testi-slider"></div>
                 <img src=${props.testimonial[0].leftBtn} alt="leftBtn">
                 <img src=${props.testimonial[0].rightBtn} alt="rightBtn">
             </div>
@@ -175,32 +153,24 @@ const Main = (props) => {
     `
     mainpage.appendChild(testimonial);
     // create a testimonial content and render
-    // const testiMonial = document.getElementById('testi-content');
-    // props.testimonial[0].testi.forEach(item => {
-    //     const testItem = document.createElement('div');
-    //     testItem.className = "testi-item"
-    //     testiMonial.appendChild(testItem)
-    //     testItem.append(
-    //         Object.assign(
-    //             document.createElement('h4'),
-    //             {
-    //                 innerHTML: item.name
-    //             }
-    //         ),
-    //         Object.assign(
-    //             document.createElement('p'),
-    //             {
-    //                 innerHTML: item.location
-    //             }
-    //         ),
-    //         Object.assign(
-    //             document.createElement('span'),
-    //             {
-    //                 innerHTML: item.msg
-    //             }
-    //         )
-    //     )
-    // })
+    const testiMonial = document.getElementById('testi-slider');
+    props.testimonial[0].testi.forEach(item => {
+        testiMonial.appendChild(
+            Object.assign(
+                document.createElement('div'),
+                {
+                    id: "testi-content",
+                    innerHTML: `
+                      <div class="testi-item">
+                        <h4>${item.name}</h4>
+                        <p>${item.location}</p>
+                        <span>${item.msg}</span>
+                      </div>
+                    `
+                }
+            )
+        )
+    })
 
     // creating a blog section
     const blog = document.createElement('section');
