@@ -256,12 +256,25 @@
         }
 
         .testi-lt-content {
+             /* background: green; */
+             position: relative;
+            .controls{
+                width:100%;
+                img {
+                    width: 40px;
+                    cursor: pointer;
+                    position: absolute;
+                }
+                img:first-child{
+                    left:0;
+                    top:50vh;
+                }
+                img:last-child{
+                    right:0;
+                    top:50vh;
+                }
 
-            img {
-                width: 40px;
-                cursor: pointer;
             }
-
         }
 
         .testi-slider {
@@ -274,13 +287,13 @@
             #testi-content {
                 width: 100%;
                 /* overflow:scroll; */
-                background: #FAEBE4;
+                background: transparent;
                 /* gap: 20px; */
                 flex-shrink: 0;
 
                 .testi-item {
                     /* width: 100% !important; */
-                    background: #ffffff;
+                    background: #FAEBE4;
                     display: flex;
                     flex-direction: column;
                     padding: 20px;

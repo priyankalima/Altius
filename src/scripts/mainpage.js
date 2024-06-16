@@ -143,10 +143,12 @@ const Main = (props) => {
                 <p class="title">testimonial</p>
                 <span class="title-heading">What Our Happy Client Say</span>
                 <div class="testi-slider" id="testi-slider"></div>
-                <img src=${props.testimonial[0].leftBtn} alt="leftBtn"
-                onclick="prevBtn()">
-                <img src=${props.testimonial[0].rightBtn} alt="rightBtn"
-                onclick="nextBtn()">
+                <div class="controls">
+                    <img src=${props.testimonial[0].leftBtn} alt="leftBtn"
+                    onclick="prevBtn()">
+                    <img src=${props.testimonial[0].rightBtn} alt="rightBtn"
+                    onclick="nextBtn()">
+                </div>
             </div>
             <div id="testi-rt-image" class="testi-rt-image">
                 <img src=${props.testimonial[1].img}>
