@@ -282,14 +282,18 @@
             width: 100%;
             display: flex;
             overflow:hidden;
+            flex-shrink: 0;
             /* background:green; */
 
             #testi-content {
                 width: 100%;
                 /* overflow:scroll; */
                 background: transparent;
+                display: flex;
+                align-content: center;
                 /* gap: 20px; */
                 flex-shrink: 0;
+                height:auto;
 
                 .testi-item {
                     /* width: 100% !important; */
