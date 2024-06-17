@@ -20,8 +20,9 @@
         padding: 5px;
         background: #FFEEE6;
         border-radius: 5px;
-        .toggle{
-            display:flex;
+
+        .toggle {
+            display: flex;
             flex-direction: column;
             align-items: center;
 
@@ -33,7 +34,7 @@
                 transition: 0.4s;
                 border-radius: 10px;
             }
-    
+
             .bar2 {
                 width: 15px;
                 height: 3px;
@@ -72,6 +73,13 @@
 
         #menu-list {
             gap: 10px;
+            align-items: center;
+
+            @media only screen and (max-width: 600px) {
+                /* display: flex; */
+                align-items:start;
+            }
+            /* align-content: center; */
 
             li {
                 list-style: none;
@@ -80,7 +88,7 @@
                 gap: 5px;
                 margin: 0 5px;
 
-                div {
+                .dropdown {
                     gap: 10px;
                 }
 
@@ -90,12 +98,31 @@
                     opacity: 60%;
                     cursor: pointer;
                 }
+                a:hover{
+                    opacity: 100%;
+                }
 
                 .dropList {
                     display: none;
+                    position: absolute;
                     background-color: #fff;
                     padding: 10px;
+                    margin-top: 30px;
                     border-radius: 10px;
+                    z-index: 1;
+
+                    @media only screen and (max-width: 600px) {
+                        /* display: flex; */
+                        position:relative;
+                        margin-top: 10px;
+                    }
+
+                    .tooltip{
+                        width:100px;
+                        height:100px;
+                        background: green;
+                    }
+
 
                     li a {
                         text-decoration: none;
@@ -116,13 +143,12 @@
             border: none;
             border-radius: 5px;
             color: var(--light-color);
+
+            @media only screen and (max-width: 600px) {
+               margin-top: 20px;
+            }
+            
         }
     }
 
-    #nav-toggle:checked~.menu {
-        @media only screen and (max-width: 600px) {
-            /* display: flex; */
-            display: block;
-        }
-    }
 }

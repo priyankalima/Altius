@@ -60,35 +60,28 @@ const Header = (props) => {
     firstList.className = "dropdown";
 
     // firstLink.className = "dropbtn ";
-    firstList.innerHTML =`
+    firstList.innerHTML = `
     <div class="d-col">
-      <div class="d-row">
         <a class="dropbtn">Capability</a>
-        <span class="icon-downarrow"></span>
       </div>
-      <div></div>
     </div>
     `
     // second list element
     const secondList = document.getElementsByTagName('li')[1];
     secondList.className = "dropdown";
-    secondList.innerHTML =`
+    secondList.innerHTML = `
     <div class="d-col">
-      <div class="d-row">
         <a class="dropbtn">Our Service</a>
-        <span class="icon-downarrow"></span>
-      </div>
-      <div></div>
     </div>
     `
     for (let i = 0; i < 2; i++) {
         // create dropdownl list
         const droplist = document.createElement('div');
-        droplist.className = "dropList"
-        // count droplists
+        droplist.className = "dropList";
+        // count droplists;
         const droplists = document.getElementsByClassName('dropList').length;
         // if droplist is 0 show append the list into firstList else secondList
-        if (droplists == 0) {
+        if (droplists == 0 ) {
             firstList.appendChild(droplist);
             // add innerHTML to droplist
             droplist.innerHTML = `
@@ -98,7 +91,7 @@ const Header = (props) => {
                 <li><a href="">Corporate Branding & Business Graphics</a></li>
             `
         }
-        else {
+        if(droplists == 1 ) {
             secondList.appendChild(droplist);
             // add innerHTML to droplist
             droplist.innerHTML = `
