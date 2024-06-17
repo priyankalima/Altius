@@ -81,7 +81,7 @@ const Header = (props) => {
         // count droplists;
         const droplists = document.getElementsByClassName('dropList').length;
         // if droplist is 0 show append the list into firstList else secondList
-        if (droplists == 0 ) {
+        if (droplists == 0) {
             firstList.appendChild(droplist);
             // add innerHTML to droplist
             droplist.innerHTML = `
@@ -91,7 +91,7 @@ const Header = (props) => {
                 <li><a href="">Corporate Branding & Business Graphics</a></li>
             `
         }
-        if(droplists == 1 ) {
+        if (droplists == 1) {
             secondList.appendChild(droplist);
             // add innerHTML to droplist
             droplist.innerHTML = `
