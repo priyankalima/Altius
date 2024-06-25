@@ -5,7 +5,7 @@
             "id": "logo",
             "logo": {
                 "class": "img",
-                "src": "/src/assets/images/logo.svg",
+                "src": "/src/assets/logo.svg",
                 "id": "toggleBtn"
             }
         },
@@ -45,7 +45,7 @@
         {
             "class": "banner-image",
             "id": "bannerImage",
-            "src": "/src/assets/images/banner.svg"
+            "src": "https://drive.google.com/thumbnail?id=1gl4hoxtmX6GfeKTVS01eDAStrDz5x5fI&sz=w1000"
         }
     ],
     "service": [
@@ -87,27 +87,27 @@
             "para": "Customer satisfaction is our mission. We offer comprehensive solutions for visual communications with our immense expertise. We strive and commit to providing our customers with high-quality products and services that give effective results.",
             "lists": [
                 {
-                    "icon": "/src/assets/images/serviceIcon/icon-1.svg",
+                    "icon": "/src/assets/icon-1.svg",
                     "list": "High Quality Service"
                 },
                 {
-                    "icon": "/src/assets/images/serviceIcon/icon-2.svg",
+                    "icon": "/src/assets/icon-2.svg",
                     "list": "On Time Service"
                 },
                 {
-                    "icon": "/src/assets/images/serviceIcon/icon-3.svg",
+                    "icon": "/src/assets/icon-3.svg",
                     "list": "Creative Service"
                 },
                 {
-                    "icon": "/src/assets/images/serviceIcon/icon-4.svg",
+                    "icon": "/assets/images/serviceIcon/icon-4.svg",
                     "list": "Grow Your Business"
                 },
                 {
-                    "icon": "/src/assets/images/serviceIcon/icon-5.svg",
+                    "icon": "/assets/images/serviceIcon/icon-5.svg",
                     "list": "Most Valuable Partner "
                 },
                 {
-                    "icon": "/src/assets/images/serviceIcon/icon-6.svg",
+                    "icon": "/assets/images/serviceIcon/icon-6.svg",
                     "list": "Customer Service"
                 }
             ]
@@ -115,7 +115,7 @@
         {
             "class": "about-right-img",
             "id": "",
-            "src": "/src/assets/images/aboutUs.svg"
+            "src": "/assets/images/aboutUs.svg"
         }
     ],
     "work": [
@@ -128,37 +128,37 @@
             "id": "workContent",
             "content": [
                 {
-                    "icon": "/src/assets/images/workIcons/icon-1.svg",
+                    "icon": "/assets/images/workIcons/icon-1.svg",
                     "title": "Airport & City Transport",
                     "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 },
                 {
-                    "icon": "/src/assets/images/workIcons/icon-2.svg",
+                    "icon": "/assets/images/workIcons/icon-2.svg",
                     "title": "Healthcare & Hospital",
                     "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 },
                 {
-                    "icon": "/src/assets/images/workIcons/icon-3.svg",
+                    "icon": "/assets/images/workIcons/icon-3.svg",
                     "title": "Logistics & Distribution",
                     "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 },
                 {
-                    "icon": "./src/assets/images/workIcons/icon-4.svg",
+                    "icon": "./assets/images/workIcons/icon-4.svg",
                     "title": "Utility & Services",
                     "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 },
                 {
-                    "icon": "./src/assets/images/workIcons/icon-5.svg",
+                    "icon": "./assets/images/workIcons/icon-5.svg",
                     "title": "Oil & Gas",
                     "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 },
                 {
-                    "icon": "./src/assets/images/workIcons/icon-6.svg",
+                    "icon": "./assets/images/workIcons/icon-6.svg",
                     "title": "Government & Educational Institute",
                     "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 },
                 {
-                    "icon": "./src/assets/images/workIcons/icon-7.svg",
+                    "icon": "./assets/images/workIcons/icon-7.svg",
                     "title": "Food & Beverage Distribution",
                     "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 }
@@ -166,14 +166,14 @@
         }
     ],
     "process": {
-        "src": "./src/assets/images/process.svg"
+        "src": "./assets/images/process.svg"
     },
     "testimonial": [
         {
             "class": "",
             "id": "",
-            "leftBtn" : "./src/assets/icons/left-arrow.svg",
-            "rightBtn" : "./src/assets/icons/right-arrow.svg",
+            "leftBtn" : "./assets/icons/left-arrow.svg",
+            "rightBtn" : "./assets/icons/right-arrow.svg",
             "testi": [
                 {
                     "img": "",
@@ -198,13 +198,13 @@
         {
             "class": "",
             "id": "",
-            "img": "./src/assets/images/tesimonial.svg"
+            "img": "./assets/images/tesimonial.svg"
         }
     ],
     "contact": {
-        "img": "./src/assets/images/contactImg.svg",
+        "img": "./assets/images/contactImg.svg",
         "content": "Contact Us Today To Start Your Next Project",
-        "backimg": "./src/assets/images/contactBg.svg"
+        "backimg": "./assets/images/contactBg.svg"
     },
     "blog": [
         {
@@ -216,19 +216,19 @@
             "id": "",
             "content": [
                 {
-                    "img": "./src/assets/images/blogImg/img-1.svg",
+                    "img": "./assets/images/blogImg/img-1.svg",
                     "title": "Vinyl Graphics for Every Business Need",
                     "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     "link": ""
                 },
                 {
-                    "img": "./src/assets/images/blogImg/img-2.svg",
+                    "img": "./assets/images/blogImg/img-2.svg",
                     "title": "A Sustainable Way to Boost Business",
                     "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     "link": ""
                 },
                 {
-                    "img": "./src/assets/images/blogImg/img-3.svg",
+                    "img": "./assets/images/blogImg/img-3.svg",
                     "title": "Elevate Your Office With Design",
                     "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     "link": ""
@@ -252,7 +252,7 @@
         }
     ],
     "details": {
-        "logo": "./src/assets/images/logo.svg",
+        "logo": "./assets/images/logo.svg",
         "about": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "address": [
             "80 Broklyn Road Street New York. USA" ,
