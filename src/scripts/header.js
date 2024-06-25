@@ -56,7 +56,7 @@ const Header = (props) => {
     });
 
     // first list element
-    const firstList = document.getElementsByTagName('li')[0];
+    const firstList = document.getElementsByTagName('li')[1];
     firstList.className = "dropdown";
 
     // firstLink.className = "dropbtn ";
@@ -67,7 +67,7 @@ const Header = (props) => {
     </div>
     `
     // second list element
-    const secondList = document.getElementsByTagName('li')[1];
+    const secondList = document.getElementsByTagName('li')[2];
     secondList.className = "dropdown";
     secondList.innerHTML = `
     <div class="d-col">

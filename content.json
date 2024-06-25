@@ -13,9 +13,9 @@
             "class": "lastchild",
             "id": "menu",
             "menu": [
-                "Capability" ,
+                "Home",
+                "Capability",
                 "Our Service",
-                "About Us",
                 "Contact Us"
             ],
             "capability": [
@@ -40,7 +40,8 @@
             "class": "banner-content",
             "id": "bannerContent",
             "heading": "Signs of Good Times",
-            "para": "Houston’s One-Stop Shop for Visual Communications"
+            "para": "Houston’s One-Stop Shop for Visual Communications",
+            "icon" : "/src/assets/getstarted-arrow.svg"
         },
         {
             "class": "banner-image",
@@ -172,8 +173,8 @@
         {
             "class": "",
             "id": "",
-            "leftBtn" : "./assets/icons/left-arrow.svg",
-            "rightBtn" : "./assets/icons/right-arrow.svg",
+            "leftBtn": "./assets/icons/left-arrow.svg",
+            "rightBtn": "./assets/icons/right-arrow.svg",
             "testi": [
                 {
                     "img": "",
@@ -255,8 +256,8 @@
         "logo": "./assets/images/logo.svg",
         "about": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "address": [
-            "80 Broklyn Road Street New York. USA" ,
-            "+(528) 456-7592" ,
+            "80 Broklyn Road Street New York. USA",
+            "+(528) 456-7592",
             "info@example.com"
         ],
         "quicklink": [
