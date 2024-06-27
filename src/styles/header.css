@@ -18,7 +18,7 @@
         width: 40px;
         height: 30px;
         padding: 5px;
-        background: #FFEEE6;
+        background: #FCDCCC;
         border-radius: 5px;
 
         .toggle {
@@ -81,14 +81,14 @@
             }
 
             /* align-content: center; */
-            
+
             li {
                 list-style: none;
                 display: flex;
                 flex-direction: column;
                 gap: 5px;
                 margin: 0 5px;
-               
+
                 .dropdown {
                     gap: 10px;
                 }
@@ -99,7 +99,7 @@
                     opacity: 60%;
                     cursor: pointer;
                     padding-bottom: 3px;
-                    
+
                 }
 
                 a:hover {
@@ -107,7 +107,8 @@
                     padding-bottom: 5px;
                     border-bottom: 1px solid var(--theme-color);
                 }
-                .active{
+
+                .active {
                     opacity: 100%;
                     color: #010919;
                     /* padding-bottom: 2px; */
@@ -148,11 +149,14 @@
             background: var(--theme-color);
             border: none;
             border-radius: 5px;
+            font-family: var(--font-family);
+            font-weight: var(--bold);
+            font-size: 14px;
             color: var(--light-color);
 
             @media only screen and (max-width: 600px) {
                 margin-top: 20px;
-                width:100%;
+                width: 100%;
             }
 
         }
