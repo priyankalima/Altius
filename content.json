@@ -117,7 +117,7 @@
         {
             "class": "about-right-img",
             "id": "",
-            "src": "/assets/images/aboutUs.svg"
+            "src": "/src/assets/aboutImg.png"
         }
     ],
     "work": [
