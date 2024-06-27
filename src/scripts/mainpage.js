@@ -27,7 +27,7 @@ const Main = (props) => {
             <div class="about-lt-content">
                 <p class="title">why choose us</p>
                 <span class="title-heading">${props.about[0].heading}</span><br>
-                <span>${props.about[0].para}</span><br>
+                <span class="para">${props.about[0].para}</span><br>
                 <div class="exp-card">
                     <span style="font-size:30px;">25+</span>
                     <span> Years Of Experience in Graphic Service</span>
