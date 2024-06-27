@@ -26,8 +26,8 @@ const Main = (props) => {
         <div class="container d-flex">
             <div class="about-lt-content">
                 <p class="title">why choose us</p>
-                <span class="title-heading">${props.about[0].heading}</span><br>
-                <span class="para">${props.about[0].para}</span><br>
+                <span class="title-heading">${props.about[0].heading}</span>
+                <span class="para" style="margin-top:10px">${props.about[0].para}</span><br>
                 <div class="exp-card">
                     <span style="font-size:30px;">25+</span>
                     <span> Years Of Experience in Graphic Service</span>
@@ -49,7 +49,7 @@ const Main = (props) => {
                 {
                     className: "list-items",
                     innerHTML: `
-                      <img src=${item.icon}> <span>${item.list}</span>
+                      <img src=${item.icon}> <span class="para-bold">${item.list}</span>
                     `
                 }
             )

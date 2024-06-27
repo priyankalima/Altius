@@ -89,11 +89,11 @@
             "para": "Customer satisfaction is our mission. We offer comprehensive solutions for visual communications with our immense expertise. ",
             "lists": [
                 {
-                    "icon": "/src/assets/icon-1.svg",
+                    "icon": "/src/assets/icon-2.svg",
                     "list": "High Quality Service"
                 },
                 {
-                    "icon": "/src/assets/icon-2.svg",
+                    "icon": "/src/assets/icon-1.svg",
                     "list": "On Time Service"
                 },
                 {
@@ -101,15 +101,15 @@
                     "list": "Creative Service"
                 },
                 {
-                    "icon": "/assets/images/serviceIcon/icon-4.svg",
+                    "icon": "/src/assets/icon-4.svg",
                     "list": "Grow Your Business"
                 },
                 {
-                    "icon": "/assets/images/serviceIcon/icon-5.svg",
+                    "icon": "/src/assets/icon-5.svg",
                     "list": "Most Valuable Partner "
                 },
                 {
-                    "icon": "/assets/images/serviceIcon/icon-6.svg",
+                    "icon": "/src/assets/icon-6.svg",
                     "list": "Customer Service"
                 }
             ]
