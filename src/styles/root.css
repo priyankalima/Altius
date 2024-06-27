@@ -102,10 +102,10 @@ body {
 
 .title-heading {
     font-size: 38px;
-    color: var(--dark-color);
+    color: var(--text-color);
     text-transform: capitalize;
     font-weight: var(--bold);
-    opacity: 80%;
+    opacity: 100%;
 }
 
 .mt {
