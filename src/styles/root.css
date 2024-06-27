@@ -33,29 +33,7 @@ body {
     --light: 300;
 }
 
-.title-one {
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 2.5rem;
-    letter-spacing: 0.02em;
-    color: #541e09;
-}
-.title-two {
-    font-weight: 700;
-    font-size: 3.5rem;
-    background: linear-gradient(90deg, #ff682d 0%, #f48154 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.para {
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 156%;
-    letter-spacing: 0.03em;
-    color: rgba(30, 10, 1, 0.6);
-}
+
 
 .container {
     width: 80%;
@@ -88,6 +66,31 @@ body {
 .d-row {
     display: flex;
     flex-direction: row;
+}
+
+.title-one {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 0.02em;
+    color: #541e09;
+    text-transform: uppercase;
+}
+.title-two {
+    font-weight: 700;
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, #ff682d 0%, #f48154 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.para {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    color: rgba(30, 10, 1, 0.6);
 }
 
 .title {
