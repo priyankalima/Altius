@@ -55,14 +55,16 @@ const Header = (props) => {
         )
     });
 
+    document.getElementsByTagName('a')[0].className ="active";
+
     // first list element
     const firstList = document.getElementsByTagName('li')[1];
     firstList.className = "dropdown";
 
     // firstLink.className = "dropbtn ";
     firstList.innerHTML = `
-    <div class="d-col">
-        <a class="dropbtn">Capability</a>
+    <div class="d-row">
+        <a class="dropbtn">Capability <img src=${props[0].icon}></a>
       </div>
     </div>
     `
@@ -71,7 +73,7 @@ const Header = (props) => {
     secondList.className = "dropdown";
     secondList.innerHTML = `
     <div class="d-col">
-        <a class="dropbtn">Our Service</a>
+        <a class="dropbtn">Our Service <img src=${props[0].icon}></a>
     </div>
     `
     for (let i = 0; i < 2; i++) {

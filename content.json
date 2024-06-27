@@ -7,7 +7,8 @@
                 "class": "img",
                 "src": "/src/assets/logo.svg",
                 "id": "toggleBtn"
-            }
+            },
+            "icon" : "/src/assets/down-arrow.svg"
         },
         {
             "class": "lastchild",

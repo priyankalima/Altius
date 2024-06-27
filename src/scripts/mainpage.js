@@ -6,12 +6,9 @@ const Main = (props) => {
     baner.innerHTML = `
             <div class="d-flex">
                 <div class="hero-lt-content">
-                <div class="container header-title">
-                    <span
-                    class="animate__animated animate__bounce">
-                    Sign of <br> 
-                    <span class="custome-heading-title">Good Times</span>
-                    </span>
+                <div class="container banner-heading ">
+                    <span class="title-one">Sign of </span> <br>
+                    <span class="title-two">Good Times</span>
                     <p>${props.banner[0].para}</p>
                     <button>Get Started <img src=${props.banner[0].icon}></button>
                 </div>
