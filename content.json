@@ -130,37 +130,37 @@
             "id": "workContent",
             "content": [
                 {
-                    "icon": "/assets/images/workIcons/icon-1.svg",
+                    "icon": "/src/assets/icon-7.svg",
                     "title": "Airport & City Transport",
                     "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 },
                 {
-                    "icon": "/assets/images/workIcons/icon-2.svg",
+                    "icon": "/src/assets/icon-8.svg",
                     "title": "Healthcare & Hospital",
                     "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 },
                 {
-                    "icon": "/assets/images/workIcons/icon-3.svg",
+                    "icon": "/src/assets/icon-9.svg",
                     "title": "Logistics & Distribution",
                     "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 },
                 {
-                    "icon": "./assets/images/workIcons/icon-4.svg",
+                    "icon": "./src/assets/icon-10.svg",
                     "title": "Utility & Services",
                     "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 },
                 {
-                    "icon": "./assets/images/workIcons/icon-5.svg",
+                    "icon": "./src/assets/icon-11.svg",
                     "title": "Oil & Gas",
                     "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 },
                 {
-                    "icon": "./assets/images/workIcons/icon-6.svg",
+                    "icon": "./src/assets/icon-12.svg",
                     "title": "Government & Educational Institute",
                     "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 },
                 {
-                    "icon": "./assets/images/workIcons/icon-7.svg",
+                    "icon": "./src/assets/icon-13.svg",
                     "title": "Food & Beverage Distribution",
                     "para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
                 }
