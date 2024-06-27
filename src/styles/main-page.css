@@ -133,12 +133,13 @@
         }
 
         .about-lt-content {
+            width:100%;
             display: flex;
             flex-direction: column;
             gap: 5px;
 
             #about-short-list {
-                margin-top: 20px;
+                margin-top: 10px;
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
@@ -177,7 +178,7 @@
 
         .about-lt-content,
         .about-rt-image {
-            width: 50%;
+            /* width: 40%; */
 
             @media only screen and (max-width: 600px) {
                 width: 100%;
@@ -185,6 +186,7 @@
         }
 
         .about-rt-image {
+            width:90%;
             img {
                 width: 100%;
             }
