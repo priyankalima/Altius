@@ -9,7 +9,7 @@ const Main = (props) => {
                 <div class="container banner-heading ">
                     <span class="title-one">Sign of </span> <br>
                     <span class="title-two">Good Times</span>
-                    <p>${props.banner[0].para}</p>
+                    <p class="para">${props.banner[0].para}</p>
                     <button>Get Started <img src=${props.banner[0].icon}></button>
                 </div>
                 </div>
