@@ -71,7 +71,7 @@
     }
 
     section:nth-child(3) {
-        background: #FAFAFA;
+        background: #ffffff;
         padding: 60px 0;
 
         .service-rt-content {
@@ -121,7 +121,7 @@
     }
 
     section:nth-child(2) {
-        background: #ffffff;
+        background: #FAFAFA;
         padding: 60px 0;
 
         .d-flex {
