@@ -156,8 +156,8 @@ const Main = (props) => {
                     id: "testi-content",
                     innerHTML: `
                       <div class="testi-item">
-                        <h4>${item.name}</h4>
-                        <p>${item.location}</p>
+                        <span>${item.name}</span>
+                        <span>${item.location}</span>
                         <span>${item.msg}</span>
                       </div>
                     `

@@ -290,14 +290,12 @@
         }
     }
 
-
     section:nth-child(5) {
         background: #FCF8F6;
         padding: 60px 0;
 
         .d-flex {
             gap: 30px;
-
         }
 
         .testi-lt-content,
@@ -395,6 +393,36 @@
                             flex-direction: column;
                             padding: 20px;
                             margin: 0 30px;
+                            gap: 15px;
+
+
+                            span:nth-child(1) {
+                                font-family: var(--font-family);
+                                font-weight: 700;
+                                font-size: 24px;
+                                line-height: 100%;
+                                text-transform: capitalize;
+                                color: var(--theme-color);
+
+                            }
+
+                            span:nth-child(2) {
+                                font-family: var(--font-family);
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 169%;
+                                text-transform: capitalize;
+                                color: rgba(112, 90, 82, 0.8);
+                            }
+
+                            span:nth-child(3) {
+                                font-family: var(--font-family);
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 169%;
+                                text-transform: capitalize;
+                                color: #3b2e28;
+                            }
                         }
                     }
                 }
