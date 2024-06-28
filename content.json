@@ -174,8 +174,8 @@
         {
             "class": "",
             "id": "",
-            "leftBtn": "./assets/icons/left-arrow.svg",
-            "rightBtn": "./assets/icons/right-arrow.svg",
+            "leftBtn": "/src/assets/left-arrow.svg",
+            "rightBtn": "/src/assets/right-arrow.svg",
             "testi": [
                 {
                     "img": "",
