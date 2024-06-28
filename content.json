@@ -241,7 +241,8 @@
     "faq": [
         {
             "class": "",
-            "id": ""
+            "id": "",
+            "icon":"./src/assets/down-arrow.svg"
         },
         {
             "class": "",
@@ -254,7 +255,7 @@
         }
     ],
     "details": {
-        "logo": ".src/assets/logo.svg",
+        "logo": "./src/assets/logo.svg",
         "about": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "address": [
             "80 Broklyn Road Street New York. USA",

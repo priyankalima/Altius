@@ -6,7 +6,7 @@ const Footer = (props) => {
             <div class="contact-msg d-flex">
                  <div>
                     <h1>${props.contact.content}</h1>
-                    <button>Get a Quote</button>
+                    <button>Get a Quote</button> 
                  </div>
                  <div>
                     <img src=${props.contact.img}>

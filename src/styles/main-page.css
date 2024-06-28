@@ -438,7 +438,7 @@
 
     section:nth-child(6) {
         background: #f6f6f6;
-        padding: 60px 0;
+        padding-top: 60px;
 
         .d-flex {
             gap: 20px;
@@ -501,13 +501,26 @@
 
     section:nth-child(7) {
         background: #F6F6F6;
-        padding: 60px 0;
+        padding-bottom: 60px;
+        padding-top:10px;
 
+        .faq-content{
+            margin-top:50px;
+        }
         .faq-content-item {
             background-color: #ffffff;
             margin: 10px 0;
             padding: 10px;
             border-radius: 10px;
+            display:flex;
+
+            p{
+                font-family: var(--font-family);
+                font-weight: 600;
+                font-size: 14px;
+                color: var(--dark-color);
+                width:100%;
+            }
         }
     }
 }

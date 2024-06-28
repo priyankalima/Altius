@@ -202,13 +202,15 @@ const Main = (props) => {
 
     // creating faq section
     const faq = document.createElement('section');
+    // console.log(props.faq[0].icon);
     faq.innerHTML = `
         <div class="container">
             <div>
                 <p class="title">faq</p>
                 <span class="title-heading">Any Quary?</span>
             </div>
-           <div id="faq-content" class="faq-content"></div>
+           <div id="faq-content" class="faq-content">
+           </div>
        <div>
     `
     mainpage.appendChild(faq)
@@ -220,7 +222,9 @@ const Main = (props) => {
                 document.createElement('div'),
                 {
                     className: "faq-content-item",
-                    innerHTML: `<p>${item}</p>`
+                    innerHTML: `<p>${item}</p>
+                    <img src=${props.faq[0].icon}>
+                    `
                 }
             )
         )
