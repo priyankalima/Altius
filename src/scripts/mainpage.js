@@ -175,6 +175,9 @@ const Main = (props) => {
                 <span class="title-heading">Find Out What’s New</span>
             </div>
             <div id="blog-content" class="d-flex mt"></div>
+            <div class="explore-btn">
+               <button>Explore</button>
+            </div>
         </div>
         `
     mainpage.appendChild(blog);
