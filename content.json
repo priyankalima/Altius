@@ -218,19 +218,19 @@
             "id": "",
             "content": [
                 {
-                    "img": "./assets/images/blogImg/img-1.svg",
+                    "img": "https://drive.google.com/thumbnail?id=1-wuiha1gn9Z1ps7mca8b3oPgK9_pA801&sz=w1000",
                     "title": "Vinyl Graphics for Every Business Need",
                     "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     "link": ""
                 },
                 {
-                    "img": "./assets/images/blogImg/img-2.svg",
+                    "img": "https://drive.google.com/thumbnail?id=1-ni75uo4tQv4M-FyFaRu4Bm0jj3L-1f8&sz=w1000",
                     "title": "A Sustainable Way to Boost Business",
                     "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     "link": ""
                 },
                 {
-                    "img": "./assets/images/blogImg/img-3.svg",
+                    "img": "https://drive.google.com/thumbnail?id=1-pPJZdia2uw9ZtiBuJ21gPMybciBpE-y&sz=w1000",
                     "title": "Elevate Your Office With Design",
                     "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     "link": ""
@@ -254,7 +254,7 @@
         }
     ],
     "details": {
-        "logo": "./assets/images/logo.svg",
+        "logo": ".src/assets/logo.svg",
         "about": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "address": [
             "80 Broklyn Road Street New York. USA",
