@@ -218,7 +218,7 @@
     }
 
     section:nth-child(4) {
-        background: #FAFAFA;
+        background: linear-gradient(180deg, #fff 0%, rgba(255, 251, 249, 0.998), #fff 100%);
         padding: 60px 0;
 
         .work-rt-content {
@@ -234,6 +234,7 @@
                 padding: 20px;
                 width: 274px;
                 flex-grow: 1;
+                border:1px solid #f78e64;
                 background-color: #ffffff;
             }
 
