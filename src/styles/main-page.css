@@ -93,6 +93,7 @@
                     height:500px;
                     object-fit: cover;
                     border-radius: 10px;
+                    filter: brightness(100%);
                     @media only screen and (max-width: 600px) {
                         width: 100%;
                     }
@@ -105,11 +106,11 @@
                 }
 
                 button {
-                    padding: 10px 15px;
+                    padding: 10px 25px;
                     border-radius: 5px;
                     background: transparent;
                     color: #ffffff;
-                    border: 1.5px solid #ffffff93;
+                    border: 0.5px solid #1d1d1d93;
                 }
 
                 .service-card-size {
