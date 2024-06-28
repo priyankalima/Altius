@@ -113,8 +113,10 @@ const Main = (props) => {
                     className: "work-card",
                     innerHTML: `
                      <img src=${item.icon}>
-                     <h4>${item.title}</h4>
-                     <span>${item.para}</span>
+                     <div>
+                        <span>${item.title}</span>
+                        <span>${item.para}</span>
+                     </div>
                      `
                 }
             )

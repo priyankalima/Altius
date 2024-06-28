@@ -252,22 +252,29 @@
                     flex-grow: 1;
                     border: 1px solid rgb(255, 104, 45, 28%);
                     background-color: #ffffff;
-            
-                    h4 {
-                        font-family: var(--font-family);
-                        font-weight: 700;
-                        font-size: 18px;
-                        text-transform: capitalize;
-                        color: var(--dark-color);
-                    }
-                    span {
-                        font-family: var(--font-family);
-                        font-weight: 600;
-                        font-size: 14px;
-                        line-height: 143%;
-                        letter-spacing: 0.03em;
-                        text-align: center;
-                        color: rgba(0, 0, 0, 0.5);
+                    
+                    div{
+                        margin-top: 20px;
+                        display:flex;
+                        flex-direction: column;
+                        gap:12px;
+                        
+                        span:first-child{
+                            font-family: var(--font-family);
+                            font-weight: 700;
+                            font-size: 18px;
+                            text-transform: capitalize;
+                            color: var(--dark-color);
+                        }
+                        span:last-child {
+                            font-family: var(--font-family);
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 143%;
+                            letter-spacing: 0.03em;
+                            text-align: center;
+                            color: rgba(0, 0, 0, 0.5);
+                        }
                     }
                 }
 
