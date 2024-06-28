@@ -81,8 +81,11 @@
             gap: 20px;
             margin-top: 50px;
             cursor:all-scroll;
-            scroll-behavior:auto;
+            scroll-behavior:smooth;
             scroll-snap-type: mandatory;
+            @media only screen and (max-width: 600px) {
+                gap: 15px;
+            }
 
             .service-card {
                 position: relative;
@@ -98,7 +101,7 @@
                     filter: brightness(100%);
 
                     @media only screen and (max-width: 600px) {
-                        width: 100%;
+                        width: 331px;
                         height:400px;
                     }
 
@@ -114,7 +117,7 @@
                     border-radius: 5px;
                     background: transparent;
                     color: #ffffff;
-                    border: 0.5px solid #1d1d1d93;
+                    border: 0.5px solid #35333393;
                 }
 
                 .service-card-size {
@@ -129,6 +132,7 @@
 
                 @media only screen and (max-width: 600px) {
                     flex-shrink: 0;
+                    width:auto;
                 }
             }
         }
