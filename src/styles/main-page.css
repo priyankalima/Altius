@@ -245,38 +245,39 @@
 
             /* width: 100%; */
             .work-card {
-                    text-align: center;
-                    border-radius: 10px;
-                    padding: 20px;
-                    width: 200px;
-                    flex-grow: 1;
-                    border: 1px solid rgb(255, 104, 45, 28%);
-                    background-color: #ffffff;
-                    
-                    div{
-                        margin-top: 20px;
-                        display:flex;
-                        flex-direction: column;
-                        gap:12px;
-                        
-                        span:first-child{
-                            font-family: var(--font-family);
-                            font-weight: 700;
-                            font-size: 18px;
-                            text-transform: capitalize;
-                            color: var(--dark-color);
-                        }
-                        span:last-child {
-                            font-family: var(--font-family);
-                            font-weight: 600;
-                            font-size: 14px;
-                            line-height: 143%;
-                            letter-spacing: 0.03em;
-                            text-align: center;
-                            color: rgba(0, 0, 0, 0.5);
-                        }
+                text-align: center;
+                border-radius: 10px;
+                padding: 20px;
+                width: 200px;
+                flex-grow: 1;
+                border: 1px solid rgb(255, 104, 45, 28%);
+                background-color: #ffffff;
+
+                div {
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+
+                    span:first-child {
+                        font-family: var(--font-family);
+                        font-weight: 700;
+                        font-size: 18px;
+                        text-transform: capitalize;
+                        color: var(--dark-color);
+                    }
+
+                    span:last-child {
+                        font-family: var(--font-family);
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 143%;
+                        letter-spacing: 0.03em;
+                        text-align: center;
+                        color: rgba(0, 0, 0, 0.5);
                     }
                 }
+            }
 
             .work-card:last-child {
                 flex-grow: 0;
@@ -379,10 +380,13 @@
                         /* overflow:scroll; */
                         background: transparent;
                         display: flex;
-                        align-content: center;
+                        align-items: center;
                         /* gap: 20px; */
                         flex-shrink: 0;
                         height: auto;
+                        background: #FAEBE4;
+                        border-radius: 10px;
+
 
                         .testi-item {
                             /* width: 100% !important; */
@@ -390,7 +394,6 @@
                             display: flex;
                             flex-direction: column;
                             padding: 20px;
-                            border-radius: 10px;
                             margin: 0 30px;
                         }
                     }
