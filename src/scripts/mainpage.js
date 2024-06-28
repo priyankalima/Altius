@@ -191,8 +191,8 @@ const Main = (props) => {
                     className: "blog-content-item",
                     innerHTML: `
                       <img src=${item.img}>
-                      <h4>${item.title}</h4>
-                      <p>${item.para}</p>
+                      <span>${item.title}</span>
+                      <span>${item.para}</span>
                       <a>Read More</a>
                     `
                 }
