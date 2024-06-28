@@ -59,8 +59,8 @@ const Main = (props) => {
     // creating service section
     const service = document.createElement('section');
     service.innerHTML = `
-            <div class="container d-col">
-                <div>
+            <div class="d-col">
+                <div class="container">
                     <p class="title">our service</p>
                     <span class="title-heading">What we do</span>
                 </div>

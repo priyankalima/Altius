@@ -75,17 +75,13 @@
         padding: 60px 0;
 
         .service-rt-content {
-            background: #fafafa;
+            /* background: #fafafa; */
             width: 100%;
             overflow: scroll;
-            gap: 20px;
+            gap: 15px;
             margin-top: 50px;
-            cursor:all-scroll;
-            scroll-behavior:smooth;
-            scroll-snap-type: mandatory;
-            @media only screen and (max-width: 600px) {
-                gap: 10px;
-            }
+            cursor: all-scroll;
+            scroll-behavior: smooth;
 
             .service-card {
                 position: relative;
@@ -94,16 +90,11 @@
 
                 img {
                     /* width: 100%; */
-                    width: 400px;
-                    height: 500px;
+                    width: 320px;
+                    height: 400px;
                     object-fit: cover;
                     border-radius: 10px;
                     filter: brightness(100%);
-
-                    @media only screen and (max-width: 600px) {
-                        width: 331px;
-                        height:400px;
-                    }
 
                 }
 
@@ -132,9 +123,28 @@
 
                 @media only screen and (max-width: 600px) {
                     flex-shrink: 0;
-                    width:auto;
+                    width: auto;
                 }
             }
+
+            .service-card:first-child {
+                margin-left: 65px;
+
+                @media only screen and (max-width: 600px) {
+                    margin-left: 15px;
+                }
+            }
+
+            .service-card:last-child {
+                margin-right: 65px;
+
+                @media only screen and (max-width: 600px) {
+                    margin-right: 15px;
+                }
+            }
+        }
+        .service-rt-content::-webkit-scrollbar {
+            display: none;
         }
 
     }
@@ -234,7 +244,7 @@
                 padding: 20px;
                 width: 274px;
                 flex-grow: 1;
-                border:1px solid #f78e64;
+                border: 1px solid #f78e64;
                 background-color: #ffffff;
             }
 
@@ -269,9 +279,10 @@
         }
 
         .testi-rt-image {
-            img{
-                width:100%;
+            img {
+                width: 100%;
             }
+
             @media only screen and (max-width: 600px) {
                 display: none;
             }
@@ -282,73 +293,78 @@
             position: relative;
             /* background:green; */
 
-            .slider{
-                position:relative;
+            .slider {
+                position: relative;
+
                 .controls {
                     width: 100%;
-                    position:relative;
-    
+                    position: relative;
+
                     img {
                         width: 40px;
                         cursor: pointer;
                         position: absolute;
                         z-index: 1;
                     }
-    
+
                     img:first-child {
                         left: 0;
-                        margin-top:10pc;
+                        margin-top: 10pc;
+
                         /* bottom:50vh; */
                         @media only screen and (max-width: 600px) {
-                            margin-top:12pc;
+                            margin-top: 12pc;
                         }
                     }
-    
+
                     img:last-child {
                         right: 0;
-                        margin-top:10pc;
+                        margin-top: 10pc;
+
                         @media only screen and (max-width: 600px) {
-                            margin-top:12pc;
+                            margin-top: 12pc;
                         }
                     }
-    
+
                 }
 
-        .testi-slider {
-            position:relative;
-            width: 80%;
-            display: flex;
-            overflow: hidden;
-            flex-shrink: 0;
-            margin:auto;
-            margin-top:50px;
-            @media only screen and (max-width: 600px) {
-                width:100%;
-            }
-            /* background:red; */
-
-            #testi-content {
-                width: 100%;
-                /* margin-left:10vw; */
-                /* overflow:scroll; */
-                background: transparent;
-                display: flex;
-                align-content: center;
-                /* gap: 20px; */
-                flex-shrink: 0;
-                height: auto;
-
-                .testi-item {
-                    /* width: 100% !important; */
-                    background: #FAEBE4;
+                .testi-slider {
+                    position: relative;
+                    width: 80%;
                     display: flex;
-                    flex-direction: column;
-                    padding: 20px;
-                    border-radius: 10px;
-                    margin: 0 30px;
+                    overflow: hidden;
+                    flex-shrink: 0;
+                    margin: auto;
+                    margin-top: 50px;
+
+                    @media only screen and (max-width: 600px) {
+                        width: 100%;
+                    }
+
+                    /* background:red; */
+
+                    #testi-content {
+                        width: 100%;
+                        /* margin-left:10vw; */
+                        /* overflow:scroll; */
+                        background: transparent;
+                        display: flex;
+                        align-content: center;
+                        /* gap: 20px; */
+                        flex-shrink: 0;
+                        height: auto;
+
+                        .testi-item {
+                            /* width: 100% !important; */
+                            background: #FAEBE4;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 20px;
+                            border-radius: 10px;
+                            margin: 0 30px;
+                        }
+                    }
                 }
-            }
-        }
             }
 
         }
