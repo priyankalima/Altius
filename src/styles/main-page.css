@@ -31,14 +31,14 @@
 
                 @media only screen and (max-width: 600px) {
                     margin-left: auto;
-                    margin:30px auto;
+                    margin: 30px auto;
                 }
             }
 
             button {
                 display: flex;
                 align-items: center;
-                gap:10px;
+                gap: 10px;
                 padding: 10px 25px;
                 border: 1px solid #f78e64;
                 background: transparent;
@@ -78,26 +78,30 @@
             background: #fafafa;
             width: 100%;
             overflow: scroll;
-            gap: 15px;
+            gap: 20px;
             margin-top: 50px;
+            cursor:all-scroll;
+            scroll-behavior:auto;
+            scroll-snap-type: mandatory;
 
             .service-card {
                 position: relative;
-                cursor: pointer;
-                width:100%;
+                width: 100%;
                 /* flex-shrink: 0; */
 
                 img {
                     /* width: 100%; */
-                    width:400px;
-                    height:500px;
+                    width: 400px;
+                    height: 500px;
                     object-fit: cover;
                     border-radius: 10px;
                     filter: brightness(100%);
+
                     @media only screen and (max-width: 600px) {
                         width: 100%;
+                        height:400px;
                     }
-                   
+
                 }
 
                 p {
@@ -114,12 +118,13 @@
                 }
 
                 .service-card-size {
+                    cursor: pointer;
                     padding: 10px;
                     position: absolute;
                     bottom: 3vh;
                     /* left:8vw; */
                     color: #ffffff;
-                    background: linear-gradient(to left,rgba(0, 0, 0, 0), rgba(0, 0, 0, 100%));
+                    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 100%));
                 }
 
                 @media only screen and (max-width: 600px) {
@@ -143,7 +148,7 @@
         }
 
         .about-lt-content {
-            width:100%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             gap: 5px;
@@ -196,7 +201,8 @@
         }
 
         .about-rt-image {
-            width:90%;
+            width: 90%;
+
             img {
                 width: 100%;
             }
