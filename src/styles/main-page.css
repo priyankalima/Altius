@@ -337,21 +337,23 @@
                     }
 
                     img:first-child {
-                        left: 0;
+                        left: 3pc;
                         margin-top: 10pc;
 
                         /* bottom:50vh; */
                         @media only screen and (max-width: 600px) {
                             margin-top: 12pc;
+                            left: 0;
                         }
                     }
 
                     img:last-child {
-                        right: 0;
+                        right: 3pc;
                         margin-top: 10pc;
 
                         @media only screen and (max-width: 600px) {
                             margin-top: 12pc;
+                            right: 0;
                         }
                     }
 
@@ -359,12 +361,14 @@
 
                 .testi-slider {
                     position: relative;
-                    width: 80%;
+                    width: 60%;
                     display: flex;
                     overflow: hidden;
                     flex-shrink: 0;
                     margin: auto;
                     margin-top: 50px;
+                    border-radius: 20px;
+                    box-shadow: 20px 10px 0 0 #fef3f3;
 
                     @media only screen and (max-width: 600px) {
                         width: 85%;
