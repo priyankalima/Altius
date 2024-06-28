@@ -99,7 +99,7 @@ const Main = (props) => {
                 <p class="title">our Work</p>
                 <span class="title-heading">Where We Do</span>
             </div>
-            <div id="work-rt-content" class=" work-rt-content"></div>
+            <div id="work-rt-content" class="work-rt-content"></div>
         </div>
     `
     mainpage.appendChild(work);
